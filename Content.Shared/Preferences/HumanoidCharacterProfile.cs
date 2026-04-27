@@ -24,7 +24,8 @@ using YamlDotNet.RepresentationModel;
 namespace Content.Shared.Preferences
 {
     /// <summary>
-    /// Character profile. Looks immutable, but uses non-immutable semantics internally for serialization/code sanity purposes.
+    ///     !! CRIMSON COMMAND MODIFIED !!
+    ///     Character profile. Looks immutable, but uses non-immutable semantics internally for serialization/code sanity purposes.
     /// </summary>
     [DataDefinition]
     [Serializable, NetSerializable]
@@ -73,6 +74,13 @@ namespace Content.Shared.Preferences
         /// </summary>
         [DataField]
         public string FlavorText { get; set; } = string.Empty;
+
+        /// <summary>
+        /// !! CRIMSON COMMAND SPECIFIC !!
+        /// Detailed text that can appear for the character if <see cref="CCVars.FlavorText"/> is enabled.
+        /// </summary>
+        [DataField]
+        public string Backstory { get; set; } =  string.Empty;
 
         /// <summary>
         /// Associated <see cref="SpeciesPrototype"/> for this profile.
@@ -126,6 +134,7 @@ namespace Content.Shared.Preferences
         public HumanoidCharacterProfile(
             string name,
             string flavortext,
+            string backstory, // CC : Added
             string species,
             int age,
             Sex sex,
@@ -140,6 +149,7 @@ namespace Content.Shared.Preferences
         {
             Name = name;
             FlavorText = flavortext;
+            Backstory = backstory;
             Species = species;
             Age = age;
             Sex = sex;
@@ -171,6 +181,7 @@ namespace Content.Shared.Preferences
         public HumanoidCharacterProfile(HumanoidCharacterProfile other)
             : this(other.Name,
                 other.FlavorText,
+                other.Backstory, // CC : Added
                 other.Species,
                 other.Age,
                 other.Sex,
@@ -276,6 +287,12 @@ namespace Content.Shared.Preferences
         public HumanoidCharacterProfile WithFlavorText(string flavorText)
         {
             return new(this) { FlavorText = flavorText };
+        }
+
+        // !! CRIMSON COMMAND SPECIFIC !! //
+        public HumanoidCharacterProfile WithBackstory(string flavorText)
+        {
+            return new(this) { Backstory = flavorText };
         }
 
         public HumanoidCharacterProfile WithAge(int age)
@@ -474,6 +491,8 @@ namespace Content.Shared.Preferences
             if (!_traitPreferences.SequenceEqual(other._traitPreferences)) return false;
             if (!Loadouts.SequenceEqual(other.Loadouts)) return false;
             if (FlavorText != other.FlavorText) return false;
+            if (Backstory != other.Backstory) return false; // CC : Added
+
             return Appearance.Equals(other.Appearance);
         }
 
@@ -544,16 +563,16 @@ namespace Content.Shared.Preferences
                 name = GetName(Species, gender);
             }
 
-            string flavortext;
             var maxFlavorTextLength = configManager.GetCVar(CCVars.MaxFlavorTextLength);
-            if (FlavorText.Length > maxFlavorTextLength)
-            {
-                flavortext = FormattedMessage.RemoveMarkupOrThrow(FlavorText)[..maxFlavorTextLength];
-            }
-            else
-            {
-                flavortext = FormattedMessage.RemoveMarkupOrThrow(FlavorText);
-            }
+            var flavorText = FlavorText.Length > maxFlavorTextLength
+                ? FormattedMessage.RemoveMarkupOrThrow(FlavorText)[..maxFlavorTextLength]
+                : FormattedMessage.RemoveMarkupOrThrow(FlavorText);
+
+            // !! CRIMSON COMMAND SPECIFIC !! //
+            var maxBackstoryLength = configManager.GetCVar(CCVars.MaxBackstoryTextLength);
+            var backstory = Backstory.Length > maxBackstoryLength
+                ? FormattedMessage.RemoveMarkupOrThrow(Backstory)[..maxBackstoryLength]
+                : FormattedMessage.RemoveMarkupOrThrow(Backstory);
 
             var appearance = HumanoidCharacterAppearance.EnsureValid(Appearance, Species, Sex);
 
@@ -602,7 +621,8 @@ namespace Content.Shared.Preferences
                          .ToList();
 
             Name = name;
-            FlavorText = flavortext;
+            FlavorText = flavorText;
+            Backstory = backstory;
             Age = age;
             Sex = sex;
             Gender = gender;
@@ -722,6 +742,7 @@ namespace Content.Shared.Preferences
             hashCode.Add(_loadouts);
             hashCode.Add(Name);
             hashCode.Add(FlavorText);
+            hashCode.Add(Backstory); // CC : Added
             hashCode.Add(Species);
             hashCode.Add(Age);
             hashCode.Add((int)Sex);

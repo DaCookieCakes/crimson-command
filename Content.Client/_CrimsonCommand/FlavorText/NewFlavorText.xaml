@@ -1,0 +1,28 @@
+<Control Name="CFlavorText" xmlns="https://spacestation14.io">
+    <BoxContainer Orientation="Vertical" HorizontalExpand="True" VerticalExpand="True">
+
+        <!-- Tab buttons -->
+        <BoxContainer Orientation="Horizontal" HorizontalExpand="True">
+            <Button Name="TabVisualDescription"
+                    Text="{Loc 'flavortext-tab-visual'}"
+                    ToggleMode="True"
+                    Pressed="True"
+                    HorizontalExpand="True" />
+            <Button Name="TabBackstory"
+                    Text="{Loc 'flavortext-tab-backstory'}"
+                    ToggleMode="True"
+                    HorizontalExpand="True" />
+        </BoxContainer>
+
+        <!-- Visual Description tab content -->
+        <Control Name="PanelVisualDescription" VerticalExpand="True">
+            <TextEdit Name="CFlavorTextInput" Access="Public" Margin="10" HorizontalExpand="True" VerticalExpand="True" />
+        </Control>
+
+        <!-- Backstory tab content -->
+        <Control Name="PanelBackstory" Visible="False" VerticalExpand="True">
+            <TextEdit Name="CBackstoryInput" Access="Public" Margin="10" HorizontalExpand="True" VerticalExpand="True" />
+        </Control>
+
+    </BoxContainer>
+</Control>

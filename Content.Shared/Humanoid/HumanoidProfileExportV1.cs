@@ -12,7 +12,8 @@ using Robust.Shared.Utility;
 namespace Content.Shared.Humanoid;
 
 /// <summary>
-/// Holds all of the data for importing / exporting character profiles.
+///     !! CRIMSON COMMAND MODIFIED !!
+///     Holds all of the data for importing / exporting character profiles.
 /// </summary>
 [DataDefinition]
 public sealed partial class HumanoidProfileExportV1
@@ -58,6 +59,10 @@ public sealed partial class HumanoidCharacterProfileV1
     [DataField]
     public string FlavorText;
 
+    // !! CRIMSON COMMAND SPECIFIC !! //
+    [DataField]
+    public string Backstory;
+
     [DataField]
     public ProtoId<SpeciesPrototype> Species;
 
@@ -81,7 +86,7 @@ public sealed partial class HumanoidCharacterProfileV1
 
     public HumanoidCharacterProfile ToV2()
     {
-        return new(Name, FlavorText, Species, Age, Sex, Gender, Appearance.ToV2(Species), SpawnPriority, JobPriorities, PreferenceUnavailable, AntagPreferences, TraitPreferences, Loadouts);
+        return new(Name, FlavorText, Backstory, Species, Age, Sex, Gender, Appearance.ToV2(Species), SpawnPriority, JobPriorities, PreferenceUnavailable, AntagPreferences, TraitPreferences, Loadouts);
     }
 }
 

@@ -170,6 +170,7 @@ namespace Content.Server.Preferences.Managers
             return new HumanoidCharacterProfile(
                 profile.CharacterName,
                 profile.FlavorText,
+                profile.Backstory,
                 species,
                 profile.Age,
                 sex,

@@ -1,8 +1,8 @@
 using Content.Server.Access.Systems;
-using Content.Server.Humanoid;
 using Content.Server.Mind;
 using Content.Server.PDA;
 using Content.Server.Station.Components;
+using Content.Shared._CrimsonCommand.DetailExaminable;
 using Content.Shared.Access.Components;
 using Content.Shared.Access.Systems;
 using Content.Shared.Body;
@@ -27,8 +27,9 @@ using Robust.Shared.Utility;
 namespace Content.Server.Station.Systems;
 
 /// <summary>
-/// Manages spawning into the game, tracking available spawn points.
-/// Also provides helpers for spawning in the player's mob.
+///     !! CRIMSON COMMAND MODIFIED !!
+///     Manages spawning into the game, tracking available spawn points.
+///     Also provides helpers for spawning in the player's mob.
 /// </summary>
 [PublicAPI]
 public sealed class StationSpawningSystem : SharedStationSpawningSystem
@@ -142,6 +143,12 @@ public sealed class StationSpawningSystem : SharedStationSpawningSystem
             if (profile.FlavorText != "" && _configurationManager.GetCVar(CCVars.FlavorText))
             {
                 AddComp<DetailExaminableComponent>(entity.Value).Content = profile.FlavorText;
+            }
+
+            // !! CRIMSON COMMAND SPECIFIC !!
+            if (profile.Backstory != "" && _configurationManager.GetCVar(CCVars.FlavorText))
+            {
+                AddComp<BackstoryExaminableComponent>(entity.Value).Content = profile.Backstory;
             }
         }
 

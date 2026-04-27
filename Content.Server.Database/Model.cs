@@ -10,6 +10,7 @@ using System.Text.Json;
 using Content.Shared.Database;
 using Microsoft.EntityFrameworkCore;
 
+// !! CRIMSON COMMAND MODIFIED !! //
 namespace Content.Server.Database
 {
     public abstract class ServerDbContext : DbContext
@@ -327,6 +328,7 @@ namespace Content.Server.Database
         public int Slot { get; set; }
         [Column("char_name")] public string CharacterName { get; set; } = null!;
         public string FlavorText { get; set; } = null!;
+        public string Backstory { get; set; } = null!; // CC : Added
         public int Age { get; set; }
         public string Sex { get; set; } = null!;
         public string Gender { get; set; } = null!;
