@@ -7,6 +7,7 @@ using Robust.Shared.Prototypes;
 namespace Content.Shared.Humanoid;
 
 /// <summary>
+///     !! CRIMSON COMMAND MODIFIED !!
 /// Dictates what species and age this character "looks like"
 /// </summary>
 [NetworkedComponent, RegisterComponent, AutoGenerateComponentState(true)]
@@ -24,4 +25,8 @@ public sealed partial class HumanoidProfileComponent : Component
 
     [DataField, AutoNetworkedField]
     public ProtoId<SpeciesPrototype> Species = HumanoidCharacterProfile.DefaultSpecies;
+
+    // !! CRIMSON COMMAND SPECIFIC !! //
+    [DataField, AutoNetworkedField]
+    public string SubSpecies = string.Empty;
 }

@@ -88,6 +88,10 @@ namespace Content.Shared.Preferences
         [DataField]
         public ProtoId<SpeciesPrototype> Species { get; set; } = DefaultSpecies;
 
+        // !! CRIMSON COMMAND SPECIFIC !! //
+        [DataField]
+        public string SubSpecies { get; set; } = string.Empty;
+
         [DataField]
         public int Age { get; set; } = 18;
 
@@ -136,6 +140,7 @@ namespace Content.Shared.Preferences
             string flavortext,
             string backstory, // CC : Added
             string species,
+            string subspecies, // CC : Added
             int age,
             Sex sex,
             Gender gender,
@@ -149,8 +154,9 @@ namespace Content.Shared.Preferences
         {
             Name = name;
             FlavorText = flavortext;
-            Backstory = backstory;
+            Backstory = backstory; // CC : Added
             Species = species;
+            SubSpecies = subspecies; // CC : Added
             Age = age;
             Sex = sex;
             Gender = gender;
@@ -183,6 +189,7 @@ namespace Content.Shared.Preferences
                 other.FlavorText,
                 other.Backstory, // CC : Added
                 other.Species,
+                other.SubSpecies, // CC : Added
                 other.Age,
                 other.Sex,
                 other.Gender,
@@ -313,6 +320,11 @@ namespace Content.Shared.Preferences
         public HumanoidCharacterProfile WithSpecies(string species)
         {
             return new(this) { Species = species };
+        }
+
+        public HumanoidCharacterProfile WithSubSpecies(string species)
+        {
+            return new (this) { SubSpecies = species };
         }
 
 
@@ -484,6 +496,7 @@ namespace Content.Shared.Preferences
             if (Sex != other.Sex) return false;
             if (Gender != other.Gender) return false;
             if (Species != other.Species) return false;
+            if (SubSpecies != other.SubSpecies) return false; // CC :Added
             if (PreferenceUnavailable != other.PreferenceUnavailable) return false;
             if (SpawnPriority != other.SpawnPriority) return false;
             if (!_jobPriorities.SequenceEqual(other._jobPriorities)) return false;
@@ -744,6 +757,7 @@ namespace Content.Shared.Preferences
             hashCode.Add(FlavorText);
             hashCode.Add(Backstory); // CC : Added
             hashCode.Add(Species);
+            hashCode.Add(SubSpecies);
             hashCode.Add(Age);
             hashCode.Add((int)Sex);
             hashCode.Add((int)Gender);

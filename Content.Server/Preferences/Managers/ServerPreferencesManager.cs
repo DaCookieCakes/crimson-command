@@ -172,6 +172,7 @@ namespace Content.Server.Preferences.Managers
                 profile.FlavorText,
                 profile.Backstory,
                 species,
+                profile.SubSpecies,
                 profile.Age,
                 sex,
                 gender,

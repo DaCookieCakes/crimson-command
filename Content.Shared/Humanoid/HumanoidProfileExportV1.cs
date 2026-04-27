@@ -66,6 +66,10 @@ public sealed partial class HumanoidCharacterProfileV1
     [DataField]
     public ProtoId<SpeciesPrototype> Species;
 
+    // !! CRIMSON COMMAND SPECIFIC !! //
+    [DataField]
+    public string SubSpecies;
+
     [DataField]
     public int Age;
 
@@ -86,7 +90,7 @@ public sealed partial class HumanoidCharacterProfileV1
 
     public HumanoidCharacterProfile ToV2()
     {
-        return new(Name, FlavorText, Backstory, Species, Age, Sex, Gender, Appearance.ToV2(Species), SpawnPriority, JobPriorities, PreferenceUnavailable, AntagPreferences, TraitPreferences, Loadouts);
+        return new(Name, FlavorText, Backstory, Species, SubSpecies, Age, Sex, Gender, Appearance.ToV2(Species), SpawnPriority, JobPriorities, PreferenceUnavailable, AntagPreferences, TraitPreferences, Loadouts);
     }
 }
 

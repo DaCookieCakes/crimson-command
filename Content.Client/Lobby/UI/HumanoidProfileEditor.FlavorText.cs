@@ -72,6 +72,7 @@ public sealed partial class HumanoidProfileEditor
         if (_flavorTextEdit != null)
             _flavorTextEdit.TextRope = new Rope.Leaf(Profile?.FlavorText ?? "");
 
+        // !! CRIMSON COMMAND SPECIFIC !! //
         if (_backstoryEdit != null)
             _backstoryEdit.TextRope = new Rope.Leaf(Profile?.Backstory ?? "");
     }

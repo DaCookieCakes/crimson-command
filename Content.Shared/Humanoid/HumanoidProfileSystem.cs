@@ -27,6 +27,7 @@ public sealed class HumanoidProfileSystem : EntitySystem
         ent.Comp.Gender = profile.Gender;
         ent.Comp.Age = profile.Age;
         ent.Comp.Species = profile.Species;
+        ent.Comp.SubSpecies = profile.SubSpecies;
         ent.Comp.Sex = profile.Sex;
         Dirty(ent);
 
@@ -38,14 +39,18 @@ public sealed class HumanoidProfileSystem : EntitySystem
             _grammar.SetGender((ent, grammar), profile.Gender);
         }
     }
-
     private void OnExamined(Entity<HumanoidProfileComponent> ent, ref ExaminedEvent args)
     {
         var identity = Identity.Entity(ent, EntityManager);
         var species = GetSpeciesRepresentation(ent.Comp.Species).ToLower();
         var age = GetAgeRepresentation(ent.Comp.Species, ent.Comp.Age);
 
-        args.PushText(Loc.GetString("humanoid-appearance-component-examine", ("user", identity), ("age", age), ("species", species)));
+        // !! CRIMSON COMMAND SPECIFIC !!
+        var speciesDisplay = (!string.IsNullOrEmpty(ent.Comp.SubSpecies) && !ent.Comp.SubSpecies.ToLower().Equals(species.ToLower()))
+            ? $"{ent.Comp.SubSpecies.ToLower()} ({species})"
+            : species;
+
+        args.PushText(Loc.GetString("humanoid-appearance-component-examine", ("user", identity), ("age", age), ("species", speciesDisplay)));
     }
 
     /// <summary>
