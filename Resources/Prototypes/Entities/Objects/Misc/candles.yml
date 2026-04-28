@@ -1,3 +1,5 @@
+# !! CRIMSON COMMAND MODIFIED !! #
+
 - type: entity
   name: candle
   parent: BaseItem
@@ -288,6 +290,9 @@
     color: "#e39c40"
     radius: 2.5
     power: 10
+  - type: Tag # CC : Added a Magic Candle Box
+    tags:
+    - TagMagicCandle
 
 - type: entity
   name: magic red candle

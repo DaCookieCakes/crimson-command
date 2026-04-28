@@ -1,0 +1,87 @@
+# CANDLES #
+- type: loadout
+  id: LoadoutCandleBox
+  storage:
+    back:
+    - BoxCandle
+  groupBy: "candles"
+
+- type: loadout
+  id: LoadoutSmallCandleBox
+  storage:
+    back:
+    - BoxCandleSmall
+  groupBy: "candles"
+
+- type: loadout
+  id: LoadoutMagicCandleBox
+  storage:
+    back:
+    - EntBoxMagicCandles
+  groupBy: "candles"
+
+# LIGHTERS #
+- type: loadout
+  id: LoadoutMatchbox
+  storage:
+    back:
+    - Matchbox
+  groupBy: "lighters"
+
+- type: loadout
+  id: LoadoutCheapLighter
+  storage:
+    back:
+    - CheapLighter
+  groupBy: "lighters"
+
+- type: loadout
+  id: LoadoutFlippoLighter
+  storage:
+    back:
+    - FlippoLighter
+  groupBy: "lighters"
+
+# SMOKEABLES #
+- type: loadout
+  id: LoadoutDansSoakedSmokes
+  storage:
+    back:
+    - CigPackMixed
+  groupBy: "smokeables"
+
+- type: loadout
+  id: LoadoutFilledSmokingPipe
+  storage:
+    back:
+    - SmokingPipeFilledTobacco
+  groupBy: "smokeables"
+
+- type: loadout
+  id: LoadoutVape
+  storage:
+    back:
+    - Vape
+  groupBy: "smokeables"
+
+# PLUSHIES #
+- type: loadout
+  id: LoadoutBlueSharkPlushie
+  storage:
+    back:
+    - PlushieSharkBlue
+  groupBy: "plushies"
+
+- type: loadout
+  id: LoadoutPinkSharkPlushie
+  storage:
+    back:
+    - PlushieSharkPink
+  groupBy: "plushies"
+
+- type: loadout
+  id: LoadoutGreySharkPlushie
+  storage:
+    back:
+    - PlushieSharkGrey
+  groupBy: "plushies"

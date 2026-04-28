@@ -1,3 +1,5 @@
+# !! CRIMSON COMMAND MODIFIED !! #
+
 # Timers
 - type: loadoutEffectGroup
   id: Command
@@ -34,12 +36,14 @@
   storage:
     back:
     - PlushieLizard
+  groupBy: "plushies" # CC : Added
 
 - type: loadout
   id: PlushieSpaceLizard
   storage:
     back:
     - PlushieSpaceLizard
+  groupBy: "plushies" # CC : Added
 
 - type: loadout
   id: ThreeCandles
@@ -56,7 +60,7 @@
   storage:
     back:
     - Lighter
-  groupBy: "smokeables"
+  groupBy: "lighters" # CC : smokeables -> lighters
 
 - type: loadout
   id: CigPackGreen
