@@ -1,3 +1,5 @@
+# !! CRIMSON COMMAND MODIFIED !! #
+
 # For mantles
 - type: loadoutEffectGroup
   id: MasterHoP
@@ -23,11 +25,13 @@
   id: HoPJumpsuit
   equipment:
     jumpsuit: ClothingUniformJumpsuitHoP
+  groupBy: "hop_jumpers"
 
 - type: loadout
   id: HoPJumpskirt
   equipment:
     jumpsuit: ClothingUniformJumpskirtHoP
+  groupBy: "hop_jumpers"
 
 # Head
 - type: loadout

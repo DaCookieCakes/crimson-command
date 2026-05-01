@@ -1,53 +1,65 @@
+# !! MODIFIED BY CRIMSON COMMAND !! #
+
 # Jumpsuit
 - type: loadout
   id: LawyerJumpsuit
   equipment:
     jumpsuit: ClothingUniformJumpsuitLawyerBlack
+  groupBy: "lawyer_jumpsuits"   # CC : Added
 
 - type: loadout
   id: LawyerJumpskirt
   equipment:
     jumpsuit: ClothingUniformJumpskirtLawyerBlack
+  groupBy: "lawyer_jumpskirts"  # CC : Added
 
 - type: loadout
   id: LawyerJumpsuitBlue
   equipment:
     jumpsuit: ClothingUniformJumpsuitLawyerBlue
+  groupBy: "lawyer_jumpsuits"   # CC : Added
 
 - type: loadout
   id: LawyerJumpskirtBlue
   equipment:
     jumpsuit: ClothingUniformJumpskirtLawyerBlue
+  groupBy: "lawyer_jumpskirts"   # CC : Added
 
 - type: loadout
   id: LawyerJumpsuitPurple
   equipment:
     jumpsuit: ClothingUniformJumpsuitLawyerPurple
+  groupBy: "lawyer_jumpsuits"   # CC : Added
 
 - type: loadout
   id: LawyerJumpskirtPurple
   equipment:
     jumpsuit: ClothingUniformJumpskirtLawyerPurple
+  groupBy: "lawyer_jumpskirts"   # CC : Added
 
 - type: loadout
   id: LawyerJumpsuitRed
   equipment:
     jumpsuit: ClothingUniformJumpsuitLawyerRed
+  groupBy: "lawyer_jumpsuits"   # CC : Added
 
 - type: loadout
   id: LawyerJumpskirtRed
   equipment:
     jumpsuit: ClothingUniformJumpskirtLawyerRed
+  groupBy: "lawyer_jumpskirts"   # CC : Added
 
 - type: loadout
   id: LawyerJumpsuitGood
   equipment:
     jumpsuit: ClothingUniformJumpsuitLawyerGood
+  groupBy: "lawyer_jumpsuits"   # CC : Added
 
 - type: loadout
   id: LawyerJumpskirtGood
   equipment:
     jumpsuit: ClothingUniformJumpskirtLawyerGood
+  groupBy: "lawyer_jumpskirts"   # CC : Added
 
 # Neck
 - type: loadout

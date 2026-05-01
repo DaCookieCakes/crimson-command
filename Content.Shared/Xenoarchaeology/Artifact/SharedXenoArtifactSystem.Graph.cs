@@ -5,6 +5,8 @@ using Robust.Shared.Utility;
 
 namespace Content.Shared.Xenoarchaeology.Artifact;
 
+// !! CRIMSON COMMAND MODIFIED !! //
+
 /// <summary>
 /// User-friendly API for viewing and modifying the complex graph relationship in XenoArtifacts
 /// </summary>
@@ -520,7 +522,9 @@ public abstract partial class SharedXenoArtifactSystem
         var output = new HashSet<Entity<XenoArtifactNodeComponent>>();
         foreach (var s in successors)
         {
-            output.Add(GetNode((ent, ent.Comp), s));
+            // Crimson Command : Bounds check to prevent a DevEnv crash. //
+            if (TryGetNode(ent, s, out var successor))
+                output.Add(successor.Value);
         }
 
         return output;
@@ -549,6 +553,10 @@ public abstract partial class SharedXenoArtifactSystem
             var recursiveSuccessors = GetSuccessorNodes(ent, s);
             foreach (var rs in recursiveSuccessors)
             {
+                // Crimson Command : Bounds check to prevent a DevEnv crash. //
+                if (!TryGetNode(ent, s, out _))
+                    continue;
+
                 output.Add(rs);
             }
         }

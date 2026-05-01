@@ -26,8 +26,9 @@ using Robust.Shared.Utility;
 
 namespace Content.Server.Station.Systems;
 
+// !! CRIMSON COMMAND MODIFIED !! //
+
 /// <summary>
-///     !! CRIMSON COMMAND MODIFIED !!
 ///     Manages spawning into the game, tracking available spawn points.
 ///     Also provides helpers for spawning in the player's mob.
 /// </summary>
@@ -154,7 +155,7 @@ public sealed class StationSpawningSystem : SharedStationSpawningSystem
 
         if (loadout != null)
         {
-            EquipRoleLoadout(entity.Value, loadout, roleProto!);
+            EquipRoleLoadout(entity.Value, loadout, roleProto!, profile);
         }
 
         if (prototype?.StartingGear != null)

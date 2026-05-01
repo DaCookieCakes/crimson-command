@@ -14,12 +14,16 @@ using Robust.Shared.Random;
 
 namespace Content.Client.Lobby.UI.Loadouts;
 
+// !! CRIMSON COMMAND MODIFIED !! //
 [GenerateTypedNameReferences]
 public sealed partial class LoadoutWindow : FancyWindow
 {
     public event Action<string>? OnNameChanged;
     public event Action<ProtoId<LoadoutGroupPrototype>, ProtoId<LoadoutPrototype>>? OnLoadoutPressed;
     public event Action<ProtoId<LoadoutGroupPrototype>, ProtoId<LoadoutPrototype>>? OnLoadoutUnpressed;
+
+    // CRIMSON COMMAND SPECIFIC //
+    public event Action<ProtoId<LoadoutGroupPrototype>, bool>? OnPassengerFallbackToggled;
 
     private List<LoadoutGroupContainer> _groups = new();
 
@@ -47,9 +51,9 @@ public sealed partial class LoadoutWindow : FancyWindow
         {
             var name = loadout.EntityName;
 
-            LoadoutNameLabel.Text = proto.NameDataset == null ?
-                Loc.GetString("loadout-name-edit-label") :
-                Loc.GetString("loadout-name-edit-label-dataset");
+            LoadoutNameLabel.Text = proto.NameDataset == null
+                ? Loc.GetString("loadout-name-edit-label")
+                : Loc.GetString("loadout-name-edit-label-dataset");
 
             RoleNameEdit.ToolTip = Loc.GetString(
                 "loadout-name-edit-tooltip",
@@ -86,6 +90,11 @@ public sealed partial class LoadoutWindow : FancyWindow
                 container.OnLoadoutUnpressed += args =>
                 {
                     OnLoadoutUnpressed?.Invoke(group, args);
+                };
+
+                container.OnPassengerFallbackToggled += (_, pressed) =>
+                {
+                    OnPassengerFallbackToggled?.Invoke(group, pressed);
                 };
             }
         }

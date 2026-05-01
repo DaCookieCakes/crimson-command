@@ -1,3 +1,5 @@
+# !! CRIMSON COMMAND MODIFIED !! #
+
 - type: job
   id: Bartender
   name: job-name-bartender
@@ -21,7 +23,7 @@
 - type: startingGear
   id: BartenderGear
   equipment:
-    shoes: ClothingShoesColorBlack
+#   shoes: ClothingShoesColorBlack  # CC - Moved to loadout
     id: BartenderPDA
     ears: ClothingHeadsetService
   #storage:

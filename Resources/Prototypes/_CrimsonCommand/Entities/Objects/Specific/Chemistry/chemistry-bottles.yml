@@ -1,0 +1,14 @@
+- type: entity
+  id: EntChemistryBottleDiethylamine
+  suffix: diethylamine
+  parent: BaseChemistryBottleFilled
+  components:
+  - type: Label
+    currentLabel: reagent-name-diethylamine
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        maxVol: 30
+        reagents:
+        - ReagentId: Diethylamine
+          Quantity: 30

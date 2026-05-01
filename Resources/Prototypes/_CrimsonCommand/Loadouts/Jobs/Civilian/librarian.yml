@@ -1,0 +1,27 @@
+# LOADOUT GROUPS #
+- type: loadoutGroup
+  id: LoadoutGroupLibrarianOuterwear
+  name: loadout-group-librarian-outerwear
+  minLimit: 0
+  loadouts:
+  - LoadoutGreenWinterCoat
+  - LoadoutRedWinterCoat
+
+- type: loadoutGroup
+  id: LoadoutGroupLibrarianFootwear
+  name: loadout-group-librarian-footwear
+  minLimit: 0
+  defaultSelected: 1
+  loadouts:
+  - LoadoutLaceupShoes
+  - LoadoutBlackShoes
+  - LoadoutGreenShoes
+  - LoadoutRedShoes
+
+- type: loadoutGroup
+  id: LoadoutGroupLibrarianNeckwear
+  name: loadout-group-librarian-neckwear
+  minLimit: 0
+  loadouts:
+  - LoadoutGreenScarf
+  - LoadoutRedScarf

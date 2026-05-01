@@ -1,10 +1,15 @@
 <BoxContainer xmlns="https://spacestation14.io"
-         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-         Orientation="Vertical">
+              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+              Orientation="Vertical">
     <PanelContainer StyleClasses="BackgroundPanel" HorizontalExpand="True" Margin="5">
         <BoxContainer Name="LoadoutsContainer" Orientation="Vertical" VerticalExpand="True" HorizontalExpand="True"/>
     </PanelContainer>
-    <!-- Buffer space so we have 10 margin between controls but also 10 to the borders -->
+    <!-- Passenger fallback checkbox, only shown if group supports it -->
+    <PanelContainer Name="PassengerFallbackPanel" StyleClasses="AngleRect" HorizontalExpand="True" Margin="5" Visible="False">
+        <BoxContainer Orientation="Horizontal">
+            <CheckBox Name="PassengerFallbackCheck" Text="{Loc 'loadouts-passenger-fallback'}" />
+        </BoxContainer>
+    </PanelContainer>
     <PanelContainer StyleClasses="AngleRect" HorizontalExpand="True" Margin="5">
         <BoxContainer Orientation="Vertical">
             <Label Text="{Loc 'loadout-restrictions'}"/>

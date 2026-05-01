@@ -13,6 +13,7 @@ using Robust.Shared.Prototypes;
 
 namespace Content.Client.Lobby.UI;
 
+// !! CRIMSON COMMAND MODIFIED !! //
 public sealed partial class HumanoidProfileEditor
 {
 
@@ -90,6 +91,18 @@ public sealed partial class HumanoidProfileEditor
             _loadoutWindow.RefreshLoadouts(roleLoadout, session, collection);
             Profile = Profile?.WithLoadout(roleLoadout);
             ReloadPreview();
+        };
+
+        // CRIMSON COMMAND SPECIFIC //
+        _loadoutWindow.OnPassengerFallbackToggled += (group, pressed) =>
+        {
+            if (pressed)
+                roleLoadout.PassengerFallbackGroups.Add(group);
+            else
+                roleLoadout.PassengerFallbackGroups.Remove(group);
+
+            Profile = Profile?.WithLoadout(roleLoadout);
+            SetDirty();
         };
 
         JobOverride = jobProto;

@@ -3,6 +3,8 @@ using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom.Prototy
 
 namespace Content.Shared.Preferences.Loadouts;
 
+// !! CRIMSON COMMAND MODIFIED !! //
+
 /// <summary>
 /// Corresponds to a set of loadouts for a particular slot.
 /// </summary>
@@ -50,6 +52,20 @@ public sealed partial class LoadoutGroupPrototype : IPrototype, IInheritingProto
     /// </summary>
     [DataField]
     public bool Hidden;
+
+    /// <summary>
+    ///     CRIMSON COMMAND SPECIFIC
+    ///     Which loadout groups can default to passenger.
+    /// </summary>
+    [DataField]
+    public bool PassengerFallback;
+
+    /// <summary>
+    ///     CRIMSON COMMAND SPECIFIC
+    ///     What passenger group this points to.
+    /// </summary>
+    [DataField]
+    public ProtoId<LoadoutGroupPrototype>? PassengerFallbackGroup;
 
     [AlwaysPushInheritance]
     [DataField(required: true)]

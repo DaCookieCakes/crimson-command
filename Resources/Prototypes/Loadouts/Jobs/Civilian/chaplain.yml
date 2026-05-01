@@ -1,3 +1,5 @@
+# !! CRIMSON COMMAND MODIFIED !! #
+
 # Playtime requirement for NanoTrasen Bible, Codex NanoTrasimus
 - type: loadoutEffectGroup
   id: NanoTrasenBibleRequirement
@@ -65,21 +67,25 @@
   id: ChaplainJumpsuit
   equipment:
     jumpsuit: ClothingUniformJumpsuitChaplain
+  groupBy: "chaplain_jumpers" # CC : Added
 
 - type: loadout
   id: ChaplainJumpskirt
   equipment:
     jumpsuit: ClothingUniformJumpskirtChaplain
+  groupBy: "chaplain_jumpers" # CC : Added
 
 - type: loadout
   id: ChaplainRobesDark
   equipment:
     jumpsuit: ClothingUniformJumpsuitMonasticRobeDark
+  groupBy: "monastic_jumpers" # CC : Added
 
 - type: loadout
   id: ChaplainRobesLight
   equipment:
     jumpsuit: ClothingUniformJumpsuitMonasticRobeLight
+  groupBy: "monastic_jumpers" # CC : Added
 
 # Neck
 - type: loadout
@@ -132,7 +138,7 @@
   storage:
     back:
     - BibleNanoTrasen
-    
+
 - type: loadout
   id: BibleNarsie
   storage:

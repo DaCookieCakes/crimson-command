@@ -1,3 +1,5 @@
+# !! CRIMSON COMMAND MODIFIED !! #
+
 # Head
 - type: loadout
   id: ChefHead
@@ -15,11 +17,13 @@
   id: ChefJumpsuit
   equipment:
     jumpsuit: ClothingUniformJumpsuitChef
+  groupBy: "chef_jumpers" # CC : Added
 
 - type: loadout
   id: ChefJumpskirt
   equipment:
     jumpsuit: ClothingUniformJumpskirtChef
+  groupBy: "chef_jumpers" # CC : Added
 
 # Outer clothing
 - type: loadout

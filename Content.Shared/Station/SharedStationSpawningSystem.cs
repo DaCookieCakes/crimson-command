@@ -1,8 +1,10 @@
 using System.Linq;
+using Content.Shared.Clothing;
 using Content.Shared.Hands.Components;
 using Content.Shared.Hands.EntitySystems;
 using Content.Shared.Inventory;
 using Content.Shared.Item;
+using Content.Shared.Preferences;
 using Content.Shared.Preferences.Loadouts;
 using Content.Shared.Roles;
 using Content.Shared.Storage;
@@ -14,6 +16,7 @@ using Robust.Shared.Utility;
 
 namespace Content.Shared.Station;
 
+// !! CRIMSON COMMAND MODIFIED !! //
 public abstract class SharedStationSpawningSystem : EntitySystem
 {
     [Dependency] protected readonly IPrototypeManager PrototypeManager = default!;
@@ -39,14 +42,35 @@ public abstract class SharedStationSpawningSystem : EntitySystem
     }
 
     /// <summary>
+    ///     !! CRIMSON COMMAND OVERHAUL !!
     ///     Equips the data from a `RoleLoadout` onto an entity.
     /// </summary>
-    public void EquipRoleLoadout(EntityUid entity, RoleLoadout loadout, RoleLoadoutPrototype roleProto)
+    public void EquipRoleLoadout(EntityUid entity, RoleLoadout loadout, RoleLoadoutPrototype roleProto, HumanoidCharacterProfile? profile = null)
     {
         // Order loadout selections by the order they appear on the prototype.
         foreach (var group in loadout.SelectedLoadouts.OrderBy(x => roleProto.Groups.FindIndex(e => e == x.Key)))
         {
-            foreach (var items in group.Value)
+            // !! CRIMSON COMMAND SPECIFIC !!
+            // If this group has passenger fallback enabled, use the passenger loadout items instead.
+            IEnumerable<Loadout> itemsToEquip = group.Value;
+
+            if (profile != null && loadout.PassengerFallbackGroups.Contains(group.Key))
+            {
+                if (!PrototypeManager.TryIndex(group.Key, out var groupProto) ||
+                    groupProto.PassengerFallbackGroup == null)
+                    goto equip;
+
+                var passengerJobId = LoadoutSystem.GetJobPrototype("Passenger");
+                if (profile.Loadouts.TryGetValue(passengerJobId, out var passengerLoadout) &&
+                    passengerLoadout.SelectedLoadouts.TryGetValue(groupProto.PassengerFallbackGroup.Value, out var passengerItems) &&
+                    passengerItems.Count > 0)
+                {
+                    itemsToEquip = passengerItems;
+                }
+            }
+
+            equip:
+            foreach (var items in itemsToEquip)
             {
                 if (!PrototypeManager.TryIndex(items.Prototype, out var loadoutProto))
                 {

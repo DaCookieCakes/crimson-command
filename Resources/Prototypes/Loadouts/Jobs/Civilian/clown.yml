@@ -1,13 +1,17 @@
+# !! CRIMSON COMMAND MODIFIED !! #
+
 # Head
 - type: loadout
   id: JesterHat
   equipment:
     head: ClothingHeadHatJester
+  groupBy: "jester_hats"
 
 - type: loadout
   id: JesterAltHat
   equipment:
     head: ClothingHeadHatJesterAlt
+  groupBy: "jester_hats"
 
 - type: loadout
   id: ClownMitre
@@ -19,21 +23,25 @@
   id: ClownSuit
   equipment:
     jumpsuit: ClothingUniformJumpsuitClown
+  groupBy: "clown_jumpers"  # CC : Added
 
 - type: loadout
   id: ClownSkirt
   equipment:
     jumpsuit: ClothingUniformJumpskirtClown
+  groupBy: "clown_jumpers"  # CC : Added
 
 - type: loadout
   id: JesterSuit
   equipment:
     jumpsuit: ClothingUniformJumpsuitJester
+  groupBy: "jester_jumpers" # CC : Added
 
 - type: loadout
   id: JesterAltSuit
   equipment:
     jumpsuit: ClothingUniformJumpsuitJesterAlt
+  groupBy: "jester_jumpers" # CC : Added
 
 # Back
 - type: loadout

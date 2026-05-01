@@ -1,0 +1,66 @@
+# Winter coats
+- type: loadout
+  id: LoadoutBlackWinterCoat
+  equipment:
+    outerClothing: ClothingOuterWinterColorBlack
+  groupBy: "colored_winter_coats"
+
+- type: loadout
+  id: LoadoutPurpleWinterCoat
+  equipment:
+    outerClothing: ClothingOuterWinterColorPurple
+  groupBy: "colored_winter_coats"
+
+- type: loadout
+  id: LoadoutRedWinterCoat
+  equipment:
+    outerClothing: ClothingOuterWinterColorRed
+  groupBy: "colored_winter_coats"
+
+- type: loadout
+  id: LoadoutBlueWinterCoat
+  equipment:
+    outerClothing: ClothingOuterWinterColorBlue
+  groupBy: "colored_winter_coats"
+
+- type: loadout
+  id: LoadoutBrownWinterCoat
+  equipment:
+    outerClothing: ClothingOuterWinterColorBrown
+  groupBy: "colored_winter_coats"
+
+- type: loadout
+  id: LoadoutGrayWinterCoat
+  equipment:
+    outerClothing: ClothingOuterWinterColorGray
+  groupBy: "colored_winter_coats"
+
+- type: loadout
+  id: LoadoutGreenWinterCoat
+  equipment:
+    outerClothing: ClothingOuterWinterColorGreen
+  groupBy: "colored_winter_coats"
+
+- type: loadout
+  id: LoadoutLightBrownWinterCoat
+  equipment:
+    outerClothing: ClothingOuterWinterColorLightBrown
+  groupBy: "colored_winter_coats"
+
+- type: loadout
+  id: LoadoutOrangeWinterCoat
+  equipment:
+    outerClothing: ClothingOuterWinterColorOrange
+  groupBy: "colored_winter_coats"
+
+- type: loadout
+  id: LoadoutWhiteWinterCoat
+  equipment:
+    outerClothing: ClothingOuterWinterColorWhite
+  groupBy: "colored_winter_coats"
+
+- type: loadout
+  id: LoadoutYellowWinterCoat
+  equipment:
+    outerClothing: ClothingOuterWinterColorYellow
+  groupBy: "colored_winter_coats"

@@ -665,7 +665,7 @@
           Quantity: 30
 
 - type: entity
-  id: ChemistryBottlePhalanximine
+  id: "ChemistryBottlePhalanximine"
   suffix: phalanximine
   parent: BaseChemistryBottleFilled
   components:

@@ -1,0 +1,35 @@
+- type: loadout
+  id: LoadoutBrownGloves
+  equipment:
+    gloves: ClothingHandsGlovesColorBrown
+  groupBy: "colored_gloves"
+
+- type: loadout
+  id: LoadoutBlackGloves
+  equipment:
+    gloves: ClothingHandsGlovesColorBlack
+  groupBy: "colored_gloves"
+
+- type: loadout
+  id: LoadoutWhiteGloves
+  equipment:
+    gloves: ClothingHandsGlovesColorWhite
+  groupBy: "colored_gloves"
+
+- type: loadout
+  id: LoadoutPurpleGloves
+  equipment:
+    gloves: ClothingHandsGlovesColorPurple
+  groupBy: "colored_gloves"
+
+- type: loadout
+  id: LoadoutRedGloves
+  equipment:
+    gloves: ClothingHandsGlovesColorRed
+  groupBy: "colored_gloves"
+
+- type: loadout
+  id: LoadoutLatexGloves
+  equipment:
+    gloves: ClothingHandsGlovesLatex
+  groupBy: "protective_gloves"

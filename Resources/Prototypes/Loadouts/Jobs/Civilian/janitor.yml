@@ -1,3 +1,5 @@
+# !! CRIMSON COMMAND MODIFIED !! #
+
 - type: loadoutEffectGroup
   id: SeniorJanitorial
   effects:
@@ -18,11 +20,13 @@
   id: JanitorJumpsuit
   equipment:
     jumpsuit: ClothingUniformJumpsuitJanitor
+  groupBy: "janitor_jumpers"
 
 - type: loadout
   id: JanitorJumpskirt
   equipment:
     jumpsuit: ClothingUniformJumpskirtJanitor
+  groupBy: "janitor_jumpers"
 
 # Gloves
 - type: loadout

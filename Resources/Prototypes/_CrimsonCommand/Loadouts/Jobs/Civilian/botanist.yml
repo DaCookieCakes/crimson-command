@@ -1,0 +1,69 @@
+# LOADOUT EFFECTS #
+- type: loadoutEffectGroup
+  id: LoadoutEffectGroupSeniorBotanist
+  effects:
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:RoleTimeRequirement
+      role: JobBotanist
+      time: 52h # 1 hour per week for 1 year
+
+# ENTITIES #
+- type: entity
+  id: EntDummyChemPack
+  categories: [ HideSpawnMenu ]
+  name: senior botanist chem pack
+  description: A set of four pre-made chems for use in hydroponics!
+  components:
+  - type: Sprite
+    sprite: Objects/Specific/Chemistry/bottle.rsi
+    state: bottle-1
+
+# LOADOUTS #
+- type: loadout
+  id: LoadoutBotanistChemPack
+  dummyEntity: EntDummyChemPack
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: LoadoutEffectGroupSeniorBotanist
+  storage:
+    back:
+    - ChemistryBottleUnstableMutagen
+    - ChemistryBottleDylovene
+    - ChemistryBottlePhalanximine
+    - EntChemistryBottleDiethylamine
+
+# LOADOUT GROUPS #
+- type: loadoutGroup
+  id: LoadoutGroupBotanistTrinkets
+  name: loadout-group-jobtrinkets
+  minLimit: 0
+  loadouts:
+  - LoadoutBotanistChemPack
+
+- type: loadoutGroup
+  id: LoadoutGroupBotanistOuterwear
+  name: loadout-group-botanist-outerwear
+  minLimit: 0
+  loadouts:
+  - BotanistApron
+  - BotanistWintercoat
+  - LoadoutGreenWinterCoat
+  - LoadoutBlueWinterCoat
+
+- type: loadoutGroup
+  id: LoadoutGroupBotanistNeckwear
+  name: loadout-group-botanist-neckwear
+  minLimit: 0
+  loadouts:
+  - LoadoutGreenScarf
+
+- type: loadoutGroup
+  id: LoadoutGroupBotanistFootwear
+  name: loadout-group-botanist-footwear
+  minLimit: 0
+  defaultSelected: 1
+  loadouts:
+  - LoadoutBrownShoes
+  - LoadoutGreenShoes
+  - LoadoutBlueShoes

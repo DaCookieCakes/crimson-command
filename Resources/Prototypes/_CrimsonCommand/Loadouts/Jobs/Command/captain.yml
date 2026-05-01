@@ -1,0 +1,17 @@
+# LOADOUTS #
+- type: loadout
+  id: LoadoutLaceupShoes
+  equipment:
+    shoes: ClothingShoesBootsLaceup
+
+# LOADOUT GROUPS #
+- type: loadoutGroup
+  id: LoadoutGroupCaptainShoes
+  name: loadout-group-captain-shoes
+  minLimit: 0
+  defaultSelected: 1
+  loadouts:
+  - LoadoutLaceupShoes
+  - LoadoutBlackShoes
+  - LoadoutBrownShoes
+  - LoadoutBlueShoes

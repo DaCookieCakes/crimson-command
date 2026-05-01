@@ -1,0 +1,97 @@
+# LOADOUTS #
+# Jumpers
+- type: loadout
+  id: LoadoutBartenderJumpsuit
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitBartender
+  groupBy: "bartender_jumpers"
+
+- type: loadout
+  id: LoadoutBartenderJumpskirt
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtBartender
+  groupBy: "bartender_jumpers"
+
+- type: loadout
+  id: LoadoutPurpleBartenderJumpsuit
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitBartenderPurple
+  groupBy: "bartender_jumpers"
+
+# Outerwear
+- type: loadout
+  id: LoadoutBartenderApron
+  equipment:
+    outerClothing: ClothingOuterApronBar
+
+- type: loadout
+  id: LoadoutBartenderVest
+  equipment:
+    outerClothing: ClothingOuterVest
+
+- type: loadout
+  id: LoadoutBartenderWinterCoat
+  equipment:
+    outerClothing: ClothingOuterWinterBar
+
+- type: loadout
+  id: LoadoutBartenderBandolier
+  equipment:
+    belt: ClothingBeltBandolier
+
+# LOADOUT GROUPS #
+- type: loadoutGroup
+  id: LoadoutGroupBartenderJumpers
+  name: loadout-group-bartender-jumpers
+  loadouts:
+  - LoadoutBartenderJumpsuit
+  - LoadoutBartenderJumpskirt
+  - LoadoutPurpleBartenderJumpsuit
+  - LoadoutMaidUniform
+  - LoadoutMiniskirtMaidUniform
+
+- type: loadoutGroup
+  id: LoadoutGroupBartenderOuterwear
+  name: loadout-group-bartender-outerwear
+  minLimit: 0
+  loadouts:
+  - LoadoutBartenderApron
+  - LoadoutBartenderVest
+  - LoadoutBartenderWinterCoat
+  - LoadoutBlackWinterCoat
+  - LoadoutGrayWinterCoat
+  - LoadoutWhiteWinterCoat
+  - LoadoutPurpleWinterCoat
+
+- type: loadoutGroup
+  id: LoadoutGroupBartenderNeckwear
+  name: loadout-group-bartender-neckwear
+  minLimit: 0
+  loadouts:
+  - LoadoutBlackScarf
+  - LoadoutRedScarf
+
+- type: loadoutGroup
+  id: LoadoutGroupBartenderFootwear
+  name: loadout-group-bartender-footwear
+  minLimit: 0
+  defaultSelected: 1
+  loadouts:
+  - LoadoutLaceupShoes
+  - LoadoutBlackShoes
+  - LoadoutWhiteShoes
+
+- type: loadoutGroup
+  id: LoadoutGroupBartenderHandwear
+  name: loadout-group-bartender-handwear
+  minLimit: 0
+  loadouts:
+  - LoadoutBlackGloves
+  - LoadoutWhiteGloves
+
+- type: loadoutGroup
+  id: LoadoutGroupBartenderBelts
+  name: loadout-group-bartender-belts
+  minLimit: 0
+  loadouts:
+  - LoadoutBartenderBandolier

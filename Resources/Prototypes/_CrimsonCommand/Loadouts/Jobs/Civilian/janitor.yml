@@ -1,0 +1,57 @@
+# LOADOUTS #
+# jumpers
+- type: loadout
+  id: LoadoutMaidUniform
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtJanimaid
+  groupBy: "maid_jumpskirts"
+
+- type: loadout
+  id: LoadoutMiniskirtMaidUniform
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtJanimaidmini
+  groupBy: "maid_jumpskirts"
+
+# Footwear
+- type: loadout
+  id: LoadoutGaloshes
+  equipment:
+    shoes: ClothingShoesGaloshes
+
+# Job
+- type: loadout
+  id: SeniorLoadoutMegaSprayBottle
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: SeniorJanitorial
+  storage:
+    back:
+    - MegaSprayBottle
+
+# LOADOUT GROUPS #
+- type: loadoutGroup
+  id: LoadoutGroupJanitorJumpers
+  name: loadout-group-janitor-jumpers
+  loadouts:
+  - JanitorJumpsuit
+  - JanitorJumpskirt
+  - LoadoutMaidUniform
+  - LoadoutMiniskirtMaidUniform
+
+- type: loadoutGroup
+  id: LoadoutGroupJanitorOuterwear
+  name: loadout-group-janitor-outerwear
+  minLimit: 0
+  loadouts:
+  - JanitorWintercoat
+  - LoadoutYellowWinterCoat
+  - LoadoutOrangeWinterCoat
+  - LoadoutPurpleWinterCoat
+
+- type: loadoutGroup
+  id: LoadoutGroupJanitorFootwear
+  name: loadout-group-janitor-footwear
+  minLimit: 0
+  defaultSelected: 1  # Unsafe for cleaning, but we remain silly :3
+  loadouts:
+  - LoadoutGaloshes

@@ -1,20 +1,26 @@
+# !! CRIMSON COMMAND MODIFIED !! #
+
 # Jumpsuit
 - type: loadout
   id: LibrarianJumpsuit
   equipment:
     jumpsuit: ClothingUniformJumpsuitLibrarian
+  groupBy: "librarian_jumpers"   # CC : Added
 
 - type: loadout
   id: LibrarianJumpskirt
   equipment:
     jumpsuit: ClothingUniformJumpskirtLibrarian
+  groupBy: "librarian_jumpers"   # CC : Added
 
 - type: loadout
   id: CuratorJumpsuit
   equipment:
     jumpsuit: ClothingUniformJumpsuitCurator
+  groupBy: "curator_jumpers"   # CC : Added
 
 - type: loadout
   id: CuratorJumpskirt
   equipment:
     jumpsuit: ClothingUniformJumpskirtCurator
+  groupBy: "curator_jumpers"  # CC : Added

@@ -1,0 +1,71 @@
+# LOADOUT GROUPS #
+- type: loadoutGroup
+  id: LoadoutGroupServiceWorkerHeadwear
+  name: loadout-group-service-worker-headwear
+  minLimit: 0
+  loadouts:
+  - LoadoutTophat
+  - LoadoutBowlerHat
+  - LoadoutChefHat
+
+- type: loadoutGroup
+  id: LoadoutGroupServiceWorkerMasks
+  name: loadout-group-service-worker-masks
+  minLimit: 0
+  loadouts:
+  - LoadoutItalianMoustache
+
+- type: loadoutGroup
+  id: LoadoutGroupServiceWorkerJumpers
+  name: loadout-group-service-worker-jumpers
+  loadouts:
+  - LoadoutBartenderJumpsuit
+  - LoadoutBartenderJumpskirt
+  - LoadoutPurpleBartenderJumpsuit
+  - LoadoutChefJumpsuit
+  - LoadoutChefJumpskirt
+  - LoadoutMaidUniform
+  - LoadoutMiniskirtMaidUniform
+
+- type: loadoutGroup
+  id: LoadoutGroupServiceWorkerOuterwear
+  name: loadout-group-service-worker-outerwear
+  minLimit: 0
+  loadouts:
+  - LoadoutBartenderApron
+  - LoadoutBartenderVest
+  - LoadoutBartenderWinterCoat
+  - LoadoutBlackWinterCoat
+  - LoadoutGrayWinterCoat
+  - LoadoutWhiteWinterCoat
+  - LoadoutChefApron
+  - LoadoutChefJacket
+  - LoadoutChefWinterCoat
+
+- type: loadoutGroup
+  id: LoadoutGroupServiceWorkerFootwear
+  name: loadout-group-service-worker-footwear
+  minLimit: 0
+  defaultSelected: 1
+  loadouts:
+  - LoadoutLaceupShoes
+  - LoadoutChefShoes
+  - LoadoutBlackShoes
+  - LoadoutBrownShoes
+  - LoadoutWhiteShoes
+
+- type: loadoutGroup
+  id: LoadoutGroupServiceWorkerHandwear
+  name: loadout-group-service-worker-handwear
+  minLimit: 0
+  loadouts:
+  - LoadoutBlackGloves
+  - LoadoutWhiteGloves
+  - LoadoutLatexGloves
+
+- type: loadoutGroup
+  id: LoadoutGroupServiceWorkerNeckwear
+  name: loadout-group-service-worker-neckwear
+  minLimit: 0
+  loadouts:
+  - LoadoutBlackScarf

@@ -1,3 +1,4 @@
+# !! CRIMSON COMMAND MODIFIED !! #
 - type: job
   id: HeadOfPersonnel
   name: job-name-hop
@@ -63,7 +64,7 @@
 - type: startingGear
   id: HoPGear
   equipment:
-    shoes: ClothingShoesColorBrown
+    # shoes: ClothingShoesColorBrown # CC : Moved to loadout
     id: HoPPDA
     gloves: ClothingHandsGlovesHop
     ears: ClothingHeadsetAltCommand

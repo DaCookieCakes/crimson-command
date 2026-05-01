@@ -21,7 +21,7 @@
 - type: startingGear
   id: BotanistGear
   equipment:
-    shoes: ClothingShoesColorBrown
+#   shoes: ClothingShoesColorBrown  # CC : Added to loadout
     id: BotanistPDA
     ears: ClothingHeadsetService
     belt: ClothingBeltPlantFilled

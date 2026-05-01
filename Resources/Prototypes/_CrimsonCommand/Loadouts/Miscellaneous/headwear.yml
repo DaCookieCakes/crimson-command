@@ -1,0 +1,9 @@
+- type: loadout
+  id: LoadoutTophat
+  equipment:
+    head: ClothingHeadHatTophat
+
+- type: loadout
+  id: LoadoutBowlerHat
+  equipment:
+    head: ClothingHeadHatBowlerHat

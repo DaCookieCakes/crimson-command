@@ -25,6 +25,7 @@ public sealed partial class LoadoutGroupContainer : BoxContainer
 
     public event Action<ProtoId<LoadoutPrototype>>? OnLoadoutPressed;
     public event Action<ProtoId<LoadoutPrototype>>? OnLoadoutUnpressed;
+    public event Action<ProtoId<LoadoutGroupPrototype>, bool>? OnPassengerFallbackToggled;
 
     public LoadoutGroupContainer(HumanoidCharacterProfile profile, RoleLoadout loadout, LoadoutGroupPrototype groupProto, ICommonSession session, IDependencyCollection collection)
     {
@@ -33,6 +34,20 @@ public sealed partial class LoadoutGroupContainer : BoxContainer
         _groupProto = groupProto;
 
         RefreshLoadouts(profile, loadout, session, collection);
+        if (_groupProto.PassengerFallback)
+        {
+            PassengerFallbackPanel.Visible = true;
+            PassengerFallbackCheck.Pressed = loadout.PassengerFallbackGroups.Contains(_groupProto.ID);
+            PassengerFallbackCheck.OnToggled += args =>
+            {
+                if (args.Pressed)
+                    loadout.PassengerFallbackGroups.Add(_groupProto.ID);
+                else
+                    loadout.PassengerFallbackGroups.Remove(_groupProto.ID);
+
+                OnPassengerFallbackToggled?.Invoke(_groupProto.ID, args.Pressed);
+            };
+        }
     }
 
     /// <summary>

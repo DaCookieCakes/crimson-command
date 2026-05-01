@@ -12,6 +12,8 @@ using Robust.Shared.Utility;
 
 namespace Content.Shared.Preferences.Loadouts;
 
+// !! CRIMSON COMMAND MODIFIED !! //
+
 /// <summary>
 /// Contains all of the selected data for a role's loadout.
 /// </summary>
@@ -23,6 +25,10 @@ public sealed partial class RoleLoadout : IEquatable<RoleLoadout>
 
     [DataField]
     public Dictionary<ProtoId<LoadoutGroupPrototype>, List<Loadout>> SelectedLoadouts = new();
+
+    // CRIMSON COMMAND SPECIFIC //
+    [DataField]
+    public HashSet<ProtoId<LoadoutGroupPrototype>> PassengerFallbackGroups = new();
 
     /// <summary>
     /// Loadout specific name.
@@ -49,6 +55,9 @@ public sealed partial class RoleLoadout : IEquatable<RoleLoadout>
         {
             weh.SelectedLoadouts.Add(selected.Key, new List<Loadout>(selected.Value));
         }
+
+        // CRIMSON COMMAND SPECIFIC //
+        weh.PassengerFallbackGroups = new HashSet<ProtoId<LoadoutGroupPrototype>>(PassengerFallbackGroups);
 
         weh.EntityName = EntityName;
 
@@ -353,8 +362,15 @@ public sealed partial class RoleLoadout : IEquatable<RoleLoadout>
 
     public bool Equals(RoleLoadout? other)
     {
-        if (ReferenceEquals(null, other)) return false;
-        if (ReferenceEquals(this, other)) return true;
+        if (ReferenceEquals(null, other))
+            return false;
+
+        if (ReferenceEquals(this, other))
+            return true;
+
+        // CRIMSON COMMAND SPECIFIC //
+        if (!PassengerFallbackGroups.SetEquals(other.PassengerFallbackGroups))
+            return false;
 
         if (!Role.Equals(other.Role) ||
             SelectedLoadouts.Count != other.SelectedLoadouts.Count ||
@@ -384,6 +400,6 @@ public sealed partial class RoleLoadout : IEquatable<RoleLoadout>
 
     public override int GetHashCode()
     {
-        return HashCode.Combine(Role, SelectedLoadouts, Points);
+        return HashCode.Combine(Role, SelectedLoadouts, Points, PassengerFallbackGroups);
     }
 }

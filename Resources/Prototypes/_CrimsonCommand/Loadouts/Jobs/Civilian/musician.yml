@@ -1,0 +1,36 @@
+- type: loadoutGroup
+  id: LoadoutGroupMusicianHeadwear
+  name: loadout-group-musician-headwear
+  minLimit: 0
+  loadouts:
+  - LoadoutTophat
+
+- type: loadoutGroup
+  id: LoadoutGroupMusicianNeckwear
+  name: loadout-group-musician-neckwear
+  minLimit: 0
+  loadouts:
+  - LoadoutBlackScarf
+  - LoadoutRedScarf
+  - LoadoutPurpleScarf
+
+- type: loadoutGroup
+  id: LoadoutGroupMusicianFootwear
+  name: loadout-group-musician-footwear
+  minLimit: 0
+  defaultSelected: 1
+  loadouts:
+  - LoadoutLaceupShoes
+  - LoadoutBlackShoes
+  - LoadoutRedShoes
+  - LoadoutPurpleShoes
+
+- type: loadoutGroup
+  id: LoadoutGroupMusicianHandwear
+  name: loadout-group-musician-handwear
+  minLimit: 0
+  loadouts:
+  - LoadoutBlackGloves
+  - LoadoutWhiteGloves
+  - LoadoutRedGloves
+  - LoadoutPurpleGloves

@@ -1,3 +1,5 @@
+# !! CRIMSON COMMAND MODIFIED !! #
+
 # Head
 - type: loadout
   id: BotanistHead
@@ -14,16 +16,19 @@
   id: BotanistJumpsuit
   equipment:
     jumpsuit: ClothingUniformJumpsuitHydroponics
+  groupBy: "botanist_jumpers" # CC : Added
 
 - type: loadout
   id: BotanistJumpskirt
   equipment:
     jumpsuit: ClothingUniformJumpskirtHydroponics
+  groupBy: "botanist_jumpers" # CC : Added
 
 - type: loadout
   id: BotanistOveralls
   equipment:
     jumpsuit: ClothingUniformOveralls
+  groupBy: "botanist_jumpers"
 
 # Back
 - type: loadout

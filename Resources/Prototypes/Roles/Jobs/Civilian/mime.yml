@@ -1,3 +1,5 @@
+# !! CRIMSON COMMAND MODIFIED !! #
+
 - type: job
   id: Mime
   name: job-name-mime
@@ -22,8 +24,8 @@
 - type: startingGear
   id: MimeGear
   equipment:
-    gloves: ClothingHandsGlovesColorWhite
-    shoes: ClothingShoesColorWhite
+#   gloves: ClothingHandsGlovesColorWhite # CC : Moved to loadout
+#   shoes: ClothingShoesColorWhite        # CC : Moved to loadout
     id: MimePDA
     pocket1: CrayonMime
     ears: ClothingHeadsetService

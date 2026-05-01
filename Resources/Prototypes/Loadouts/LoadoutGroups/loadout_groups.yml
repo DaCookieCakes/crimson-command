@@ -151,6 +151,9 @@
 - type: loadoutGroup
   id: CaptainOuterClothing
   name: loadout-group-captain-outerclothing
+  passengerFallback: true                         # CC : Added
+  passengerFallbackGroup: PassengerOuterClothing  # CC : Added
+  minLimit: 0
   loadouts:
   - CaptainOuterClothing
   - CaptainWintercoat
@@ -255,8 +258,12 @@
 - type: loadoutGroup
   id: PassengerShoes
   name: loadout-group-passenger-shoes
+  minLimit: 0         # CC : Puppers OUT
+  defaultSelected: 1  # CC : But not by default :3
   loadouts:
-  - BlackShoes
+# - BlackShoes        # CC : Replaced
+  - LoadoutBlackShoes # CC : Replaced
+  - LoadoutBrownShoes # CC : Added
   - WinterBoots
 
 #- type: loadoutGroup
@@ -478,8 +485,10 @@
   id: JanitorJobTrinkets
   name: loadout-group-jobtrinkets
   minLimit: 0
+  maxLimit: 2 # CC : 1 -> 2
   loadouts:
   - JanitorGoldenPlunger
+  - SeniorLoadoutMegaSprayBottle  # CC : Added
 
 - type: loadoutGroup
   id: BotanistHead

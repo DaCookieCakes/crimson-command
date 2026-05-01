@@ -1,3 +1,5 @@
+# !! CRIMSON COMMAND MODIFIED !! #
+
 - type: job
   id: Janitor
   name: job-name-janitor
@@ -18,7 +20,7 @@
 - type: startingGear
   id: JanitorGear
   equipment:
-    shoes: ClothingShoesGaloshes
+#   shoes: ClothingShoesGaloshes  # CC - Moved to loadout
     id: JanitorPDA
     ears: ClothingHeadsetService
     belt: ClothingBeltJanitorFilled

@@ -135,7 +135,7 @@ public sealed class OutfitSystem : EntitySystem
             }
 
             // Equip the target with the job loadout
-            _spawningSystem.EquipRoleLoadout(target, roleLoadout, jobProto);
+            _spawningSystem.EquipRoleLoadout(target, roleLoadout, jobProto, profile);
         }
 
         return true;

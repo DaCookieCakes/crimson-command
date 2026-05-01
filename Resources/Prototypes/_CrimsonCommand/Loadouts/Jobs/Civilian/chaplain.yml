@@ -1,0 +1,8 @@
+- type: loadoutGroup
+  id: LoadoutGroupChaplainFootwear
+  name: loadout-group-chaplain-footwear
+  minLimit: 0
+  defaultSelected: 1
+  loadouts:
+  - LoadoutLaceupShoes
+  - LoadoutBlackShoes

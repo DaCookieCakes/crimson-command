@@ -1,0 +1,65 @@
+# LOADOUTS #
+# Headwear
+- type: loadout
+  id: LoadoutChefHat
+  equipment:
+    head: ClothingHeadHatChef
+
+# Mask
+- type: loadout
+  id: LoadoutItalianMoustache
+  equipment:
+    mask: ClothingMaskItalianMoustache
+
+# Jumpers
+- type: loadout
+  id: LoadoutChefJumpsuit
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitChef
+  groupBy: "chef_jumpers"
+
+- type: loadout
+  id: LoadoutChefJumpskirt
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtChef
+  groupBy: "chef_jumpers"
+
+# Outerwear
+- type: loadout
+  id: LoadoutChefApron
+  equipment:
+    outerClothing: ClothingOuterApronChef
+
+- type: loadout
+  id: LoadoutChefJacket
+  equipment:
+    outerClothing: ClothingOuterJacketChef
+
+- type: loadout
+  id: LoadoutChefWinterCoat
+  equipment:
+    outerClothing: ClothingOuterWinterChef
+
+# Footwear
+- type: loadout
+  id: LoadoutChefShoes
+  equipment:
+    shoes: ClothingShoesChef
+
+# LOADOUT GROUPS #
+- type: loadoutGroup
+  id: LoadoutGroupChefFootwear
+  name: loadout-group-chef-footwear
+  minLimit: 0
+  defaultSelected: 1
+  loadouts:
+  - LoadoutChefShoes
+  - LoadoutWhiteShoes
+
+- type: loadoutGroup
+  id: LoadoutGroupChefHandwear
+  name: loadout-group-chef-handwear
+  minLimit: 0
+  loadouts:
+  - LoadoutLatexGloves
+  - LoadoutWhiteGloves

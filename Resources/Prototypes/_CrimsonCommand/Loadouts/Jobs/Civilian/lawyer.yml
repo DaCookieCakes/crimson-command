@@ -1,0 +1,33 @@
+- type: loadoutGroup
+  id: LoadoutGroupLawyerOuterwear
+  name: loadout-group-lawyer-outerwear
+  minLimit: 0
+  loadouts:
+  - LoadoutBlackWinterCoat
+  - LoadoutBlueWinterCoat
+  - LoadoutPurpleWinterCoat
+  - LoadoutRedWinterCoat
+  - LoadoutGrayWinterCoat
+
+- type: loadoutGroup
+  id: LoadoutGroupLawyerFootwear
+  name: loadout-group-lawyer-footwear
+  minLimit: 0
+  defaultSelected: 1
+  loadouts:
+  - LoadoutLaceupShoes
+  - LoadoutBlackShoes
+  - LoadoutBlueShoes
+  - LoadoutPurpleShoes
+  - LoadoutRedShoes
+
+- type: loadoutGroup
+  id: LoadoutGroupLawyerNeckwear
+  name: loadout-group-lawyer-neckwear
+  minLimit: 0
+  loadouts:
+  - LawyerNeck
+  - LoadoutBlackScarf
+  - LoadoutBlueScarf
+  - LoadoutPurpleScarf
+  - LoadoutRedScarf

@@ -1,0 +1,25 @@
+- type: loadoutGroup
+  id: LoadoutGroupMimeNeckwear
+  name: loadout-group-mime-neckwear
+  minLimit: 0
+  loadouts:
+  - LoadoutZebraScarf
+  - LoadoutBlackScarf
+
+- type: loadoutGroup
+  id: LoadoutGroupMimeFootwear
+  name: loadout-group-mime-footwear
+  minLimit: 0
+  defaultSelected: 1
+  loadouts:
+  - LoadoutWhiteShoes
+  - LoadoutBlackShoes
+
+- type: loadoutGroup
+  id: LoadoutGroupMimeHandwear
+  name: loadout-group-mime-handwear
+  minLimit: 0
+  defaultSelected: 1
+  loadouts:
+  - LoadoutWhiteGloves
+  - LoadoutBlackGloves

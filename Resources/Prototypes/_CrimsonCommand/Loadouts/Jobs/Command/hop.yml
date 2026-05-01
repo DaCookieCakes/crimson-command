@@ -1,0 +1,10 @@
+# LOADOUT GROUPS #
+- type: loadoutGroup
+  id: LoadoutGroupHoPShoes
+  name: loadout-group-hop-shoes
+  minLimit: 0
+  defaultSelected: 1
+  loadouts:
+  - LoadoutLaceupShoes
+  - LoadoutBrownShoes
+  - LoadoutBlueShoes
