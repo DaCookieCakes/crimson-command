@@ -446,6 +446,9 @@ namespace Content.Server.Database
         /// May get validated at runtime and updated to to the default.
         /// </summary>
         public List<ProfileLoadout> Loadouts { get; set; } = new();
+
+        // CRIMSON COMMAND SPECIFIC //
+        public bool PassengerFallback { get; set; } = false;
     }
 
     /// <summary>

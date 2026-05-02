@@ -276,6 +276,7 @@ namespace Content.Server.Database
                     var profileGroup = new ProfileLoadoutGroup()
                     {
                         GroupName = group,
+                        PassengerFallback = loadouts.PassengerFallbackGroups.Contains(group),
                     };
 
                     foreach (var loadout in groupLoadouts)

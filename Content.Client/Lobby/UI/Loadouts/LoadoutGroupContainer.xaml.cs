@@ -10,6 +10,8 @@ using System.Linq;
 
 namespace Content.Client.Lobby.UI.Loadouts;
 
+// !! CRIMSON COMMAND MODIFIED !! //
+
 [GenerateTypedNameReferences]
 public sealed partial class LoadoutGroupContainer : BoxContainer
 {
@@ -55,6 +57,10 @@ public sealed partial class LoadoutGroupContainer : BoxContainer
     /// </summary>
     public void RefreshLoadouts(HumanoidCharacterProfile profile, RoleLoadout loadout, ICommonSession session, IDependencyCollection collection)
     {
+        // CRIMSON COMMAND SPECIFIC //
+        if (_groupProto.PassengerFallback)
+            PassengerFallbackCheck.Pressed = loadout.PassengerFallbackGroups.Contains(_groupProto.ID);
+
         var protoMan = collection.Resolve<IPrototypeManager>();
         var loadoutSystem = collection.Resolve<IEntityManager>().System<LoadoutSystem>();
         RestrictionsContainer.RemoveAllChildren();
