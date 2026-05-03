@@ -1,3 +1,9 @@
+# Shoes
+- type: loadout
+  id: LoadoutLaceupShoes
+  equipment:
+    shoes: ClothingShoesBootsLaceup
+
 # Colored Shoes
 - type: loadout
   id: LoadoutBlackShoes
@@ -52,3 +58,64 @@
   equipment:
     shoes: ClothingShoesColorPurple
   groupBy: "colored_shoes"
+
+# Winter boots
+- type: loadout
+  id: LoadoutWinterBoots
+  equipment:
+    shoes: ClothingShoesBootsWinter
+  groupBy: "colored_winter_boots"
+
+- type: loadout
+  id: LoadoutBlackWinterBoots
+  equipment:
+    shoes: EntClothesBlackWinterBoots
+  groupBy: "colored_winter_boots"
+
+- type: loadout
+  id: LoadoutWhiteWinterBoots
+  equipment:
+    shoes: EntClothesWhiteWinterBoots
+  groupBy: "colored_winter_boots"
+
+- type: loadout
+  id: LoadoutBlueWinterBoots
+  equipment:
+    shoes: EntClothesBlueWinterBoots
+  groupBy: "colored_winter_boots"
+
+- type: loadout
+  id: LoadoutBrownWinterBoots
+  equipment:
+    shoes: EntClothesBrownWinterBoots
+  groupBy: "colored_winter_boots"
+
+- type: loadout
+  id: LoadoutGreenWinterBoots
+  equipment:
+    shoes: EntClothesGreenWinterBoots
+  groupBy: "colored_winter_boots"
+
+- type: loadout
+  id: LoadoutOrangeWinterBoots
+  equipment:
+    shoes: EntClothesOrangeWinterBoots
+  groupBy: "colored_winter_boots"
+
+- type: loadout
+  id: LoadoutRedWinterBoots
+  equipment:
+    shoes: EntClothesRedWinterBoots
+  groupBy: "colored_winter_boots"
+
+- type: loadout
+  id: LoadoutYellowWinterBoots
+  equipment:
+    shoes: EntClothesYellowWinterBoots
+  groupBy: "colored_winter_boots"
+
+- type: loadout
+  id: LoadoutPurpleWinterBoots
+  equipment:
+    shoes: EntClothesPurpleWinterBoots
+  groupBy: "colored_winter_boots"

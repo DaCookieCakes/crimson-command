@@ -1,3 +1,5 @@
+# !! CRIMSON COMMAND MODIFIED !! #
+
 # For mantles
 - type: loadoutEffectGroup
   id: MasterCap
@@ -13,21 +15,25 @@
   id: CaptainJumpsuit
   equipment:
     jumpsuit: ClothingUniformJumpsuitCaptain
+  groupBy: "captain_jumpers"
 
 - type: loadout
   id: CaptainJumpskirt
   equipment:
     jumpsuit: ClothingUniformJumpskirtCaptain
+  groupBy: "captain_jumpers"
 
 - type: loadout
   id: CaptainFormalSuit
   equipment:
     jumpsuit: ClothingUniformJumpsuitCapFormal
+  groupBy: "formal_jumpers"
 
 - type: loadout
   id: CaptainFormalSkirt
   equipment:
     jumpsuit: ClothingUniformJumpskirtCapFormalDress
+  groupBy: "formal_jumpers"
 
 # Head
 - type: loadout
@@ -69,16 +75,19 @@
   id: CaptainBackpack
   equipment:
     back: ClothingBackpackCaptain
+  groupBy: "captain_backpacks"
 
 - type: loadout
   id: CaptainSatchel
   equipment:
     back: ClothingBackpackSatchelCaptain
+  groupBy: "captain_backpacks"
 
 - type: loadout
   id: CaptainDuffel
   equipment:
     back: ClothingBackpackDuffelCaptain
+  groupBy: "captain_backpacks"
 
 # Outer clothing
 - type: loadout

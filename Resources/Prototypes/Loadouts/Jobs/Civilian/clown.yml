@@ -48,16 +48,19 @@
   id: ClownBackpack
   equipment:
     back: ClothingBackpackClown
+  groupBy: "clown_bags"
 
 - type: loadout
   id: ClownSatchel
   equipment:
     back: ClothingBackpackSatchelClown
+  groupBy: "clown_bags"
 
 - type: loadout
   id: ClownDuffel
   equipment:
     back: ClothingBackpackDuffelClown
+  groupBy: "clown_bags"
 
 # Shoes
 - type: loadout

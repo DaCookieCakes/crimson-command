@@ -85,16 +85,19 @@
   id: CommonBackpack
   equipment:
     back: ClothingBackpack
+  groupBy: "common_bags"
 
 - type: loadout
   id: CommonSatchel
   equipment:
     back: ClothingBackpackSatchel
+  groupBy: "common_bags"
 
 - type: loadout
   id: CommonDuffel
   equipment:
     back: ClothingBackpackDuffel
+  groupBy: "common_bags"
 
 # Gloves
 - type: loadout

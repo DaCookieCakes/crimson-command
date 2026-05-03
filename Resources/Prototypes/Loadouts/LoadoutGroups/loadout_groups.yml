@@ -18,11 +18,11 @@
 # - ThreeCandles              # CC : Replace ThreeCandles
   - LoadoutCandleBox          # CC : Replace ThreeCandles
   - LoadoutSmallCandleBox     # CC : Replace ThreeCandles
-  - LoadoutMagicCandleBox     # CC : Added
+  - LoadoutMagicCandleBox     # CC : Replace ThreeCandles : Added
   - Lighter
-  - LoadoutMatchbox           # CC : Added
   - LoadoutCheapLighter       # CC : Added
   - LoadoutFlippoLighter      # CC : Added
+  - LoadoutMatchbox           # CC : Added
   - CigPackGreen
   - CigPackRed
   - CigPackBlue
@@ -69,6 +69,7 @@
   - Glasses
   - GlassesJamjar
   - GlassesJensen
+  - LoadoutCheapSunglasses  # CC : Added
 
 - type: loadoutGroup
   id: GroupTankHarness
@@ -151,8 +152,8 @@
 - type: loadoutGroup
   id: CaptainOuterClothing
   name: loadout-group-captain-outerclothing
-  passengerFallback: true                         # CC : Added
-  passengerFallbackGroup: PassengerOuterClothing  # CC : Added
+  passengerFallback: true                                 # CC : Added
+  passengerFallbackGroup: LoadoutGroupPassengerOuterwear  # CC : Added
   minLimit: 0
   loadouts:
   - CaptainOuterClothing
@@ -199,6 +200,8 @@
   id: HoPOuterClothing
   name: loadout-group-hop-outerclothing
   minLimit: 0
+  passengerFallback: true
+  passengerFallbackGroup: LoadoutGroupPassengerOuterwear
   loadouts:
   - HoPWintercoat
 
@@ -261,9 +264,9 @@
   minLimit: 0         # CC : Puppers OUT
   defaultSelected: 1  # CC : But not by default :3
   loadouts:
-# - BlackShoes        # CC : Replaced
-  - LoadoutBlackShoes # CC : Replaced
-  - LoadoutBrownShoes # CC : Added
+  - BlackShoes
+  - LoadoutBlackShoes
+  - LoadoutBrownShoes
   - WinterBoots
 
 #- type: loadoutGroup
@@ -334,6 +337,8 @@
 - type: loadoutGroup
   id: ChefOuterClothing
   name: loadout-group-chef-outerclothing
+  passengerFallback: true                                 # CC : Added
+  passengerFallbackGroup: LoadoutGroupPassengerOuterwear  # CC : Added
   minLimit: 0
   loadouts:
   - ChefApron
@@ -419,6 +424,8 @@
 - type: loadoutGroup
   id: ChaplainOuterClothing
   name: loadout-group-chaplain-outerclothing
+  passengerFallback: true                                 # CC : Added
+  passengerFallbackGroup: LoadoutGroupPassengerOuterwear  # CC : Added
   minLimit: 0
   loadouts:
   - ChaplainPlagueSuit
@@ -659,6 +666,8 @@
 - type: loadoutGroup
   id: MusicianOuterClothing
   name: loadout-group-musician-outerclothing
+  passengerFallback: true                                 # CC : Added
+  passengerFallbackGroup: LoadoutGroupPassengerOuterwear  # CC : Added
   minLimit: 0
   loadouts:
   - MusicianWintercoat

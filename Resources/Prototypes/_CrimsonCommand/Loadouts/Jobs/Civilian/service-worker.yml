@@ -1,3 +1,9 @@
+# LOADOUTS #
+- type: loadout
+  id: LoadoutServiceWorkerChefBelt
+  equipment:
+    belt: ClothingBeltChefFilled
+
 # LOADOUT GROUPS #
 - type: loadoutGroup
   id: LoadoutGroupServiceWorkerHeadwear
@@ -7,6 +13,17 @@
   - LoadoutTophat
   - LoadoutBowlerHat
   - LoadoutChefHat
+
+- type: loadoutGroup
+  id: LoadoutGroupServiceWorkerGlasses
+  name: loadout-group-service-worker-glasses
+  minLimit: 0
+  loadouts:
+  - LoadoutBartenderBeerGoggles
+  - Glasses
+  - GlassesJamjar
+  - GlassesJensen
+  - LoadoutCheapSunglasses
 
 - type: loadoutGroup
   id: LoadoutGroupServiceWorkerMasks
@@ -30,6 +47,8 @@
 - type: loadoutGroup
   id: LoadoutGroupServiceWorkerOuterwear
   name: loadout-group-service-worker-outerwear
+  passengerFallback: true
+  passengerFallbackGroup: LoadoutGroupPassengerOuterwear
   minLimit: 0
   loadouts:
   - LoadoutBartenderApron
@@ -43,8 +62,17 @@
   - LoadoutChefWinterCoat
 
 - type: loadoutGroup
+  id: LoadoutGroupServiceWorkerBelts
+  name: loadout-group-service-worker-belts
+  minLimit: 0
+  loadouts:
+  - LoadoutServiceWorkerChefBelt
+
+- type: loadoutGroup
   id: LoadoutGroupServiceWorkerFootwear
   name: loadout-group-service-worker-footwear
+  passengerFallback: true
+  passengerFallbackGroup: LoadoutGroupPassengerFootwear
   minLimit: 0
   defaultSelected: 1
   loadouts:
@@ -66,6 +94,8 @@
 - type: loadoutGroup
   id: LoadoutGroupServiceWorkerNeckwear
   name: loadout-group-service-worker-neckwear
+  passengerFallback: true
+  passengerFallbackGroup: LoadoutGroupPassengerNeckwear
   minLimit: 0
   loadouts:
   - LoadoutBlackScarf

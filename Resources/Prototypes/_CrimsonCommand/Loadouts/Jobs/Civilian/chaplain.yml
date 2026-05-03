@@ -1,8 +1,23 @@
 - type: loadoutGroup
+  id: LoadoutGroupChaplainNeckwear
+  name: loadout-group-chaplain-neckwear
+  passengerFallback: true
+  passengerFallbackGroup: LoadoutGroupPassengerNeckwear
+  minLimit: 0
+  loadouts:
+  - ChaplainNeck
+  - LoadoutBlackScarf
+
+- type: loadoutGroup
   id: LoadoutGroupChaplainFootwear
   name: loadout-group-chaplain-footwear
+  passengerFallback: true
+  passengerFallbackGroup: LoadoutGroupPassengerFootwear
   minLimit: 0
   defaultSelected: 1
   loadouts:
   - LoadoutLaceupShoes
   - LoadoutBlackShoes
+  - LoadoutWhiteShoes
+  - LoadoutBlackWinterBoots
+  - LoadoutWhiteWinterBoots

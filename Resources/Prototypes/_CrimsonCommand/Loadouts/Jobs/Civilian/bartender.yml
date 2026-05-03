@@ -1,4 +1,10 @@
 # LOADOUTS #
+# Eyewear
+- type: loadout
+  id: LoadoutBartenderBeerGoggles
+  equipment:
+    eyes: ClothingEyesHudBeer
+
 # Jumpers
 - type: loadout
   id: LoadoutBartenderJumpsuit
@@ -41,6 +47,18 @@
 
 # LOADOUT GROUPS #
 - type: loadoutGroup
+  id: LoadoutGroupBartenderEyewear
+  name: loadout-group-bartender-eyewear
+  minLimit: 0
+  defaultSelected: 1
+  loadouts:
+  - LoadoutBartenderBeerGoggles
+  - Glasses
+  - GlassesJamjar
+  - GlassesJensen
+  - LoadoutCheapSunglasses
+
+- type: loadoutGroup
   id: LoadoutGroupBartenderJumpers
   name: loadout-group-bartender-jumpers
   loadouts:
@@ -53,6 +71,8 @@
 - type: loadoutGroup
   id: LoadoutGroupBartenderOuterwear
   name: loadout-group-bartender-outerwear
+  passengerFallback: true
+  passengerFallbackGroup: LoadoutGroupPassengerOuterwear
   minLimit: 0
   loadouts:
   - LoadoutBartenderApron
@@ -61,11 +81,12 @@
   - LoadoutBlackWinterCoat
   - LoadoutGrayWinterCoat
   - LoadoutWhiteWinterCoat
-  - LoadoutPurpleWinterCoat
 
 - type: loadoutGroup
   id: LoadoutGroupBartenderNeckwear
   name: loadout-group-bartender-neckwear
+  passengerFallback: true
+  passengerFallbackGroup: LoadoutGroupPassengerNeckwear
   minLimit: 0
   loadouts:
   - LoadoutBlackScarf
@@ -74,12 +95,16 @@
 - type: loadoutGroup
   id: LoadoutGroupBartenderFootwear
   name: loadout-group-bartender-footwear
+  passengerFallback: true
+  passengerFallbackGroup: LoadoutGroupPassengerFootwear
   minLimit: 0
   defaultSelected: 1
   loadouts:
   - LoadoutLaceupShoes
   - LoadoutBlackShoes
   - LoadoutWhiteShoes
+  - LoadoutBlackWinterBoots
+  - LoadoutWhiteWinterBoots
 
 - type: loadoutGroup
   id: LoadoutGroupBartenderHandwear

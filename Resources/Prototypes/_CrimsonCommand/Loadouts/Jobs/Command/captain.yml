@@ -1,13 +1,9 @@
-# LOADOUTS #
-- type: loadout
-  id: LoadoutLaceupShoes
-  equipment:
-    shoes: ClothingShoesBootsLaceup
-
 # LOADOUT GROUPS #
 - type: loadoutGroup
   id: LoadoutGroupCaptainShoes
   name: loadout-group-captain-shoes
+  passengerFallback: true
+  passengerFallbackGroup: LoadoutGroupPassengerFootwear
   minLimit: 0
   defaultSelected: 1
   loadouts:
@@ -15,3 +11,6 @@
   - LoadoutBlackShoes
   - LoadoutBrownShoes
   - LoadoutBlueShoes
+  - LoadoutBlackWinterBoots
+  - LoadoutBrownWinterBoots
+  - LoadoutBlueWinterBoots

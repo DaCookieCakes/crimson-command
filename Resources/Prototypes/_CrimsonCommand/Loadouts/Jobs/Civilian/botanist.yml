@@ -43,6 +43,8 @@
 
 - type: loadoutGroup
   id: LoadoutGroupBotanistOuterwear
+  passengerFallback: true
+  passengerFallbackGroup: LoadoutGroupPassengerOuterwear
   name: loadout-group-botanist-outerwear
   minLimit: 0
   loadouts:
@@ -54,16 +56,24 @@
 - type: loadoutGroup
   id: LoadoutGroupBotanistNeckwear
   name: loadout-group-botanist-neckwear
+  passengerFallback: true
+  passengerFallbackGroup: LoadoutGroupPassengerNeckwear
   minLimit: 0
   loadouts:
   - LoadoutGreenScarf
+  - LoadoutBlueScarf
 
 - type: loadoutGroup
   id: LoadoutGroupBotanistFootwear
   name: loadout-group-botanist-footwear
+  passengerFallback: true
+  passengerFallbackGroup: LoadoutGroupPassengerFootwear
   minLimit: 0
   defaultSelected: 1
   loadouts:
   - LoadoutBrownShoes
   - LoadoutGreenShoes
   - LoadoutBlueShoes
+  - LoadoutBrownWinterBoots
+  - LoadoutGreenWinterBoots
+  - LoadoutBlueWinterBoots

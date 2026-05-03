@@ -1,0 +1,57 @@
+- type: loadoutGroup
+  id: LoadoutGroupPassengerNeckwear
+  name: loadout-group-passenger-neckwear
+  minLimit: 0
+  loadouts:
+  - Mantle
+  - LoadoutBlackScarf
+  - LoadoutBlueScarf
+  - LoadoutBrownScarf
+  - LoadoutGreenScarf
+  - LoadoutOrangeScarf
+  - LoadoutRedScarf
+  - LoadoutPurpleScarf
+  - LoadoutLightBlueScarf
+
+- type: loadoutGroup
+  id: LoadoutGroupPassengerOuterwear
+  name: loadout-group-passenger-outerwear
+  minLimit: 0
+  defaultSelected: 1
+  loadouts:
+  - LoadoutWinterCoat
+  - LoadoutBlackWinterCoat
+  - LoadoutWhiteWinterCoat
+  - LoadoutBlueWinterCoat
+  - LoadoutBrownWinterCoat
+  - LoadoutGreenWinterCoat
+  - LoadoutOrangeWinterCoat
+  - LoadoutRedWinterCoat
+  - LoadoutYellowWinterCoat
+  - LoadoutPurpleWinterCoat
+
+- type: loadoutGroup
+  id: LoadoutGroupPassengerFootwear
+  name: loadout-group-passenger-footwear
+  minLimit: 0
+  defaultSelected: 1
+  loadouts:
+  - LoadoutBlackShoes
+  - LoadoutWhiteShoes
+  - LoadoutBlueShoes
+  - LoadoutBrownShoes
+  - LoadoutGreenShoes
+  - LoadoutOrangeShoes
+  - LoadoutRedShoes
+  - LoadoutYellowShoes
+  - LoadoutPurpleShoes
+  - LoadoutWinterBoots
+  - LoadoutBlackWinterBoots
+  - LoadoutWhiteWinterBoots
+  - LoadoutBlueWinterBoots
+  - LoadoutBrownWinterBoots
+  - LoadoutGreenWinterBoots
+  - LoadoutOrangeWinterBoots
+  - LoadoutRedWinterBoots
+  - LoadoutYellowWinterBoots
+  - LoadoutPurpleWinterBoots

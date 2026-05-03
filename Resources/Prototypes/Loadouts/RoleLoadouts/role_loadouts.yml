@@ -7,8 +7,8 @@
   - CaptainHead
   - CaptainNeck
   - CaptainJumpsuit
-  - CaptainBackpack
   - CaptainOuterClothing
+  - CaptainBackpack
   - LoadoutGroupCaptainShoes # CC : Added
   - Survival
   - Trinkets
@@ -22,8 +22,8 @@
   - HoPHead
   - HoPNeck
   - HoPJumpsuit
-  - HoPBackpack
   - HoPOuterClothing
+  - HoPBackpack
   - LoadoutGroupHoPShoes # CC : Added
   - Glasses
   - Survival
@@ -47,13 +47,16 @@
   id: JobPassenger
   groups:
   - GroupTankHarness
-  - PassengerJumpsuit
-  - CommonBackpack
-  - PassengerNeck
   - PassengerFace
+# - PassengerNeck                   # CC : Replaced
+  - LoadoutGroupPassengerNeckwear   # CC : Replaced
+  - PassengerJumpsuit
+# - PassengerOuterClothing          # CC : Replaced
+  - LoadoutGroupPassengerOuterwear  # CC : Replaced
+  - CommonBackpack
   - PassengerGloves
-  - PassengerOuterClothing
-  - PassengerShoes
+# - PassengerShoes                  # CC : Replaced
+  - LoadoutGroupPassengerFootwear   # CC : Replaced
   - Glasses
   - Survival
   - Trinkets
@@ -68,13 +71,14 @@
   - LoadoutGroupBartenderNeckwear   # CC : Added
 # - BartenderJumpsuit               # CC : Replaced
   - LoadoutGroupBartenderJumpers    # CC : Replaced
-  - CommonBackpack
-  - LoadoutGroupBartenderBelts      # CC : Added
 # - BartenderOuterClothing          # CC : Replaced
   - LoadoutGroupBartenderOuterwear  # CC : Replaced
+  - CommonBackpack
+  - LoadoutGroupBartenderBelts      # CC : Added
   - LoadoutGroupBartenderFootwear   # CC : Added
   - LoadoutGroupBartenderHandwear   # CC : Added
-  - Glasses
+# - Glasses                         # CC : Replaced
+  - LoadoutGroupBartenderEyewear    # CC : Replaced
   - Survival
   - Trinkets
   - BartenderJobTrinkets
@@ -89,10 +93,12 @@
   - LoadoutGroupServiceWorkerMasks      # CC : Added
 # - BartenderJumpsuit                   # CC : Replaced
   - LoadoutGroupServiceWorkerJumpers    # CC : Replaced
-  - CommonBackpack
   - LoadoutGroupServiceWorkerOuterwear  # CC : Added
+  - CommonBackpack
+  - LoadoutGroupServiceWorkerBelts      # CC : Added
   - LoadoutGroupServiceWorkerHandwear   # CC : Added
-  - Glasses
+# - Glasses                             # CC : Replaced
+  - LoadoutGroupServiceWorkerGlasses    # CC : Replaced
   - Survival
   - Trinkets
   #- ServiceWorkerJobTrinkets
@@ -105,8 +111,8 @@
   - ChefHead
   - ChefMask
   - ChefJumpsuit
-  - CommonBackpack
   - ChefOuterClothing
+  - CommonBackpack
   - LoadoutGroupChefFootwear  # CC : Added
   - LoadoutGroupChefHandwear  # CC : Added
   - Glasses
@@ -121,8 +127,8 @@
   - GroupTankHarness
   - LoadoutGroupLibrarianNeckwear   # CC : Added
   - LibrarianJumpsuit
-  - CommonBackpack
   - LoadoutGroupLibrarianOuterwear  # CC : Added
+  - CommonBackpack
   - LoadoutGroupLibrarianFootwear   # CC : Added
   - Glasses
   - Survival
@@ -137,8 +143,8 @@
 # - LawyerNeck                  # CC : Replaced
   - LoadoutGroupLawyerNeckwear  # CC : Replaced
   - LawyerJumpsuit
-  - CommonBackpack
   - LoadoutGroupLawyerOuterwear # CC : Added
+  - CommonBackpack
   - LoadoutGroupLawyerFootwear  # CC : Added
   - Glasses
   - Survival
@@ -153,10 +159,11 @@
   - GroupTankHarness
   - ChaplainHead
   - ChaplainMask
-  - ChaplainNeck
+# - ChaplainNeck                  # CC : Replaced
+  - LoadoutGroupChaplainNeckwear  # CC : Replaced
   - ChaplainJumpsuit
-  - CommonBackpack
   - ChaplainOuterClothing
+  - CommonBackpack
   - LoadoutGroupChaplainFootwear  # CC : Added
   - ChaplainBible
   - Glasses
@@ -173,9 +180,9 @@
 # - JanitorJumpsuit               # CC : Replaced
   - LoadoutGroupJanitorJumpers    # CC : Replaced
   - JanitorGloves
-  - CommonBackpack
 # - JanitorOuterClothing          # CC : Replaced
   - LoadoutGroupJanitorOuterwear  # CC : Replaced
+  - CommonBackpack
   - LoadoutGroupJanitorFootwear   # CC : Added
   - Glasses
   - Survival
@@ -190,14 +197,13 @@
   - BotanistHead
   - LoadoutGroupBotanistNeckwear  # CC : Added
   - BotanistJumpsuit
-  - BotanistBackpack
 # - BotanistOuterClothing         # CC : Replaced
   - LoadoutGroupBotanistOuterwear # CC : Replaced
+  - BotanistBackpack
   - LoadoutGroupBotanistFootwear  # CC : Added
   - Glasses
   - Survival
   - Trinkets
-# - BotanistJobTrinkets
   - LoadoutGroupBotanistTrinkets  # CC : Added
   - GroupSpeciesBreathTool
 
@@ -208,8 +214,8 @@
   - GroupTankHarness
   - ClownHead
   - ClownJumpsuit
-  - ClownBackpack
   - ClownOuterClothing
+  - ClownBackpack
   - ClownShoes  # CC : Puppers remain IN for clowns!!
   - Glasses
   - SurvivalClown
@@ -225,8 +231,8 @@
   - MimeMask
   - LoadoutGroupMimeNeckwear  # CC : Added
   - MimeJumpsuit
-  - MimeBackpack
   - MimeOuterClothing
+  - MimeBackpack
   - MimeBelt
   - LoadoutGroupMimeFootwear  # CC : Added
   - LoadoutGroupMimeHandwear  # CC : Added
@@ -243,8 +249,8 @@
   - LoadoutGroupMusicianHeadwear  # CC : Added
   - LoadoutGroupMusicianNeckwear  # CC : Added
   - MusicianJumpsuit
-  - CommonBackpack
   - MusicianOuterClothing
+  - CommonBackpack
   - LoadoutGroupMusicianFootwear  # CC : Added
   - LoadoutGroupMusicianHandwear  # CC : Added
   - Glasses

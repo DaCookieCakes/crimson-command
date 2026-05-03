@@ -35,16 +35,19 @@
   id: BotanistBackpack
   equipment:
     back: ClothingBackpackHydroponics
+  groupBy: "botanist_bags"
 
 - type: loadout
   id: BotanistSatchel
   equipment:
     back: ClothingBackpackSatchelHydroponics
+  groupBy: "botanist_bags"
 
 - type: loadout
   id: BotanistDuffel
   equipment:
     back: ClothingBackpackDuffelHydroponics
+  groupBy: "botanist_bags"
 
 # Outer clothing
 - type: loadout

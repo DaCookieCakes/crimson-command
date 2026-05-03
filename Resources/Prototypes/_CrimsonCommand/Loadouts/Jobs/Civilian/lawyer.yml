@@ -1,6 +1,8 @@
 - type: loadoutGroup
   id: LoadoutGroupLawyerOuterwear
   name: loadout-group-lawyer-outerwear
+  passengerFallback: true
+  passengerFallbackGroup: LoadoutGroupPassengerOuterwear
   minLimit: 0
   loadouts:
   - LoadoutBlackWinterCoat
@@ -12,6 +14,8 @@
 - type: loadoutGroup
   id: LoadoutGroupLawyerFootwear
   name: loadout-group-lawyer-footwear
+  passengerFallback: true
+  passengerFallbackGroup: LoadoutGroupPassengerFootwear
   minLimit: 0
   defaultSelected: 1
   loadouts:
@@ -20,10 +24,16 @@
   - LoadoutBlueShoes
   - LoadoutPurpleShoes
   - LoadoutRedShoes
+  - LoadoutBlackWinterBoots
+  - LoadoutBlueWinterBoots
+  - LoadoutPurpleWinterBoots
+  - LoadoutRedWinterBoots
 
 - type: loadoutGroup
   id: LoadoutGroupLawyerNeckwear
   name: loadout-group-lawyer-neckwear
+  passengerFallback: true
+  passengerFallbackGroup: LoadoutGroupPassengerNeckwear
   minLimit: 0
   loadouts:
   - LawyerNeck

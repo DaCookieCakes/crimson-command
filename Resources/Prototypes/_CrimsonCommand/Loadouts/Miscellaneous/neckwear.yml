@@ -1,8 +1,8 @@
 # Scarves
 - type: loadout
-  id: LoadoutRedScarf
+  id: LoadoutBlackScarf
   equipment:
-    neck: ClothingNeckScarfStripedRed
+    neck: ClothingNeckScarfStripedBlack
   groupBy: "colored_scarves"
 
 - type: loadout
@@ -12,27 +12,15 @@
   groupBy: "colored_scarves"
 
 - type: loadout
-  id: LoadoutGreenScarf
-  equipment:
-    neck: ClothingNeckScarfStripedGreen
-  groupBy: "colored_scarves"
-
-- type: loadout
-  id: LoadoutBlackScarf
-  equipment:
-    neck: ClothingNeckScarfStripedBlack
-  groupBy: "colored_scarves"
-
-- type: loadout
   id: LoadoutBrownScarf
   equipment:
     neck: ClothingNeckScarfStripedBrown
   groupBy: "colored_scarves"
 
 - type: loadout
-  id: LoadoutLightBlueScarf
+  id: LoadoutGreenScarf
   equipment:
-    neck: ClothingNeckScarfStripedLightBlue
+    neck: ClothingNeckScarfStripedGreen
   groupBy: "colored_scarves"
 
 - type: loadout
@@ -42,9 +30,21 @@
   groupBy: "colored_scarves"
 
 - type: loadout
+  id: LoadoutRedScarf
+  equipment:
+    neck: ClothingNeckScarfStripedRed
+  groupBy: "colored_scarves"
+
+- type: loadout
   id: LoadoutPurpleScarf
   equipment:
     neck: ClothingNeckScarfStripedPurple
+  groupBy: "colored_scarves"
+
+- type: loadout
+  id: LoadoutLightBlueScarf
+  equipment:
+    neck: ClothingNeckScarfStripedLightBlue
   groupBy: "colored_scarves"
 
 - type: loadout
