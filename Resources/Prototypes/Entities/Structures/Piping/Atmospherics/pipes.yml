@@ -1,3 +1,5 @@
+# !! CRIMSON COMMAND MODIFIED !! #
+
 - type: entity
   abstract: true
   parent: BaseItem
@@ -17,6 +19,7 @@
     damageContainer: StructuralInorganic
     damageModifierSet: Metallic
   - type: SubFloorHide
+    subfloorLayer: GasPipe  # CC : Added
   - type: CollideOnAnchor
   - type: Anchorable
   - type: Rotatable

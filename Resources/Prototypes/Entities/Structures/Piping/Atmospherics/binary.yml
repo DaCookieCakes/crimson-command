@@ -1,3 +1,5 @@
+# !! CRIMSON COMMAND MODIFIED !! #
+
 - type: entity
   parent: GasPipeBase
   abstract: true
@@ -10,6 +12,7 @@
     tags:
       - Unstackable
   - type: SubFloorHide
+    subfloorLayer: GasPipe  # CC : Added
     blockInteractions: false
     blockAmbience: false
   - type: NodeContainer

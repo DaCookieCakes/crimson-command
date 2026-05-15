@@ -12,8 +12,11 @@ using Content.Shared.Tools.Systems;
 using Content.Shared.Verbs;
 using Robust.Shared.Prototypes;
 using System.Diagnostics.CodeAnalysis;
+using Content.Shared.Interaction.Components;
 
 namespace Content.Shared.Atmos.EntitySystems;
+
+// !! CRIMSON COMMAND MODIFIED !! //
 
 /// <summary>
 /// The system responsible for checking and adjusting the connection layering of gas pipes
@@ -122,7 +125,8 @@ public abstract partial class SharedAtmosPipeLayersSystem : EntitySystem
         if (!TryComp<ToolComponent>(args.Used, out var tool) || !_tool.HasQuality(args.Used, ent.Comp.Tool, tool))
             return;
 
-        if (TryComp<SubFloorHideComponent>(ent, out var subFloorHide) && subFloorHide.IsUnderCover)
+        // CC : Added BypassInteractionChecks for AGhosts during mapping.
+        if (TryComp<SubFloorHideComponent>(ent, out var subFloorHide) && subFloorHide.IsUnderCover && !HasComp<BypassInteractionChecksComponent>(args.User))
         {
             _popup.PopupClient(Loc.GetString("atmos-pipe-layers-component-cannot-adjust-pipes"), ent, args.User);
             return;

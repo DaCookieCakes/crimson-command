@@ -1,4 +1,6 @@
-﻿- type: entity
+﻿# !! CRIMSON COMMAND MODIFIED !! #
+
+- type: entity
   abstract: true
   id: CablePhysBase
   placement:
@@ -107,6 +109,8 @@
     range: 2
     sound:
       path: /Audio/Ambience/Objects/emf_buzz.ogg
+  - type: SubFloorHide      # CC : Added
+    subfloorLayer: HVCable
 
 - type: entity
   id: CableHVUncuttable
@@ -161,6 +165,8 @@
   - type: CableVisualizer
     statePrefix: mvcable_
     extraLayerPrefix: mvstripes_
+  - type: SubFloorHide # CC : Added
+    subfloorLayer: MVCable
 
 - type: entity
   id: CableMVUncuttable
@@ -215,6 +221,8 @@
         acts: [ "Destruction" ]
   - type: CableVisualizer
     statePrefix: lvcable_
+  - type: SubFloorHide  # CC : Added
+    subfloorLayer: LVCable
 
 - type: entity
   id: CableApcExtensionUncuttable

@@ -1,3 +1,5 @@
+# !! CRIMSON COMMAND MODIFIED !! #
+
 - type: entity
   parent: BaseItem
   id: SprayPainter

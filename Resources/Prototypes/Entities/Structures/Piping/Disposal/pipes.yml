@@ -1,3 +1,5 @@
+# !! CRIMSON COMMAND MODIFIED !! #
+
 # Base
 
 - type: entity
@@ -16,6 +18,7 @@
   - type: Visibility
     layer: 1
   - type: SubFloorHide
+    subfloorLayer: Disposal # CC : Added
   - type: Clickable
   - type: InteractionOutline
   - type: Physics
