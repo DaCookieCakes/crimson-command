@@ -1,5 +1,17 @@
 # LOADOUT GROUPS #
 - type: loadoutGroup
+  id: LoadoutGroupCaptainNeckwear
+  name: loadout-group-captain-neckwear
+  passengerFallback: true
+  passengerFallbackGroup: LoadoutGroupPassengerNeckwear
+  minLimit: 0
+  loadouts:
+  - CaptainCloak
+  - CaptainCloakFormal
+  - CaptainMantle
+  - 
+
+- type: loadoutGroup
   id: LoadoutGroupCaptainShoes
   name: loadout-group-captain-shoes
   passengerFallback: true

@@ -1,3 +1,5 @@
+# !! CRIMSON COMMAND MODIFIED !! #
+
 # Greytide Time
 - type: loadoutEffectGroup
   id: GreyTider
@@ -33,11 +35,13 @@
   id: GreyJumpsuit
   equipment:
     jumpsuit: ClothingUniformJumpsuitColorGrey
+  groupBy: "passenger_jumpers"  # CC : Added
 
 - type: loadout
   id: GreyJumpskirt
   equipment:
     jumpsuit: ClothingUniformJumpskirtColorGrey
+  groupBy: "passenger_jumpers"  # CC : Added
 
 # Rainbow
 - type: loadout
@@ -47,6 +51,7 @@
     proto: GreyTider
   equipment:
     jumpsuit: ClothingUniformColorRainbow
+  groupBy: "rainbow_jumpers"  # CC : Added
 
 # Rainbow Jumpskirt
 - type: loadout
@@ -56,6 +61,7 @@
     proto: GreyTider
   equipment:
     jumpsuit: ClothingUniformJumpskirtColorRainbow
+  groupBy: "rainbow_jumpers"  # CC : Added
 
 # Ancient
 - type: loadout

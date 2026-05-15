@@ -1,3 +1,5 @@
+# !! CRIMSON COMMAND MODIFIED !! #
+
 # Senior times
 - type: loadoutEffectGroup
   id: SeniorCargo
@@ -29,27 +31,32 @@
   id: CargoTechnicianJumpsuit
   equipment:
     jumpsuit: ClothingUniformJumpsuitCargo
+  groupBy: "cargo_jumpers"  # CC : Added
 
 - type: loadout
   id: CargoTechnicianJumpskirt
   equipment:
     jumpsuit: ClothingUniformJumpskirtCargo
+  groupBy: "cargo_jumpers"  # CC : Added
 
 # Back
 - type: loadout
   id: CargoTechnicianBackpack
   equipment:
     back: ClothingBackpackCargo
+  groupBy: "cargo_bags" # CC : Added
 
 - type: loadout
   id: CargoTechnicianSatchel
   equipment:
     back: ClothingBackpackSatchelCargo
+  groupBy: "cargo_bags" # CC : Added
 
 - type: loadout
   id: CargoTechnicianDuffel
   equipment:
     back: ClothingBackpackDuffelCargo
+  groupBy: "cargo_bags" # CC : Added
 
 # OuterClothing
 - type: loadout

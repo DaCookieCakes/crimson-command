@@ -1,18 +1,23 @@
+# !! CRIMSON COMMAND MODIFIED !! #
+
 # Back
 - type: loadout
   id: SalvageSpecialistBackpack
   equipment:
     back: ClothingBackpackSalvage
+  groupBy: "salvage_bags"
 
 - type: loadout
   id: SalvageSpecialistSatchel
   equipment:
     back: ClothingBackpackSatchelSalvage
+  groupBy: "salvage_bags"
 
 - type: loadout
   id: SalvageSpecialistDuffel
   equipment:
     back: ClothingBackpackDuffelSalvage
+  groupBy: "salvage_bags"
 
 # OuterClothing
 - type: loadout

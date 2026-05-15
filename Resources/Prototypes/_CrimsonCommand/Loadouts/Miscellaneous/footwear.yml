@@ -119,3 +119,9 @@
   equipment:
     shoes: EntClothesPurpleWinterBoots
   groupBy: "colored_winter_boots"
+
+# socks
+- type: loadout
+  id: LoadoutCoderSocks
+  equipment:
+    shoes: ClothingUnderSocksCoder

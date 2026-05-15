@@ -1,3 +1,5 @@
+# !! CRIMSON COMMAND MODIFIED !! #
+
 # For mantles
 - type: loadoutEffectGroup
   id: MasterQM
@@ -13,21 +15,25 @@
   id: QuartermasterJumpsuit
   equipment:
     jumpsuit: ClothingUniformJumpsuitQM
+  groupBy: "QM_jumpers" # CC : Added
 
 - type: loadout
   id: QuartermasterJumpskirt
   equipment:
     jumpsuit: ClothingUniformJumpskirtQM
+  groupBy: "QM_jumpers" # CC : Added
 
 - type: loadout
   id: QuartermasterTurtleneck
   equipment:
     jumpsuit: ClothingUniformJumpsuitQMTurtleneck
+  groupBy: "QM_turtlenecks" # CC : Added
 
 - type: loadout
   id: QuartermasterTurtleneckSkirt
   equipment:
     jumpsuit: ClothingUniformJumpskirtQMTurtleneck
+  groupBy: "QM_turtlenecks" # CC : Added
 
 - type: loadout
   id: QuartermasterFormalSuit

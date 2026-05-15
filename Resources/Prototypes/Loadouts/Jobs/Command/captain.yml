@@ -15,25 +15,25 @@
   id: CaptainJumpsuit
   equipment:
     jumpsuit: ClothingUniformJumpsuitCaptain
-  groupBy: "captain_jumpers"
+  groupBy: "captain_jumpers"  # CC : Added
 
 - type: loadout
   id: CaptainJumpskirt
   equipment:
     jumpsuit: ClothingUniformJumpskirtCaptain
-  groupBy: "captain_jumpers"
+  groupBy: "captain_jumpers"  # CC : Added
 
 - type: loadout
   id: CaptainFormalSuit
   equipment:
     jumpsuit: ClothingUniformJumpsuitCapFormal
-  groupBy: "formal_jumpers"
+  groupBy: "formal_jumpers" # CC : Added
 
 - type: loadout
   id: CaptainFormalSkirt
   equipment:
     jumpsuit: ClothingUniformJumpskirtCapFormalDress
-  groupBy: "formal_jumpers"
+  groupBy: "formal_jumpers" # CC : Added
 
 # Head
 - type: loadout

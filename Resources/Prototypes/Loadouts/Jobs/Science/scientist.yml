@@ -1,3 +1,5 @@
+# !! CRIMSON COMMAND MODIFIED # !!
+
 # Senior Time
 - type: loadoutEffectGroup
   id: SeniorResearcher
@@ -43,21 +45,25 @@
   id: ScientistJumpsuit
   equipment:
     jumpsuit: ClothingUniformJumpsuitScientist
+  groupBy: "scientist_jumpers"  # CC : Added
 
 - type: loadout
   id: ScientistJumpskirt
   equipment:
     jumpsuit: ClothingUniformJumpskirtScientist
+  groupBy: "scientist_jumpers"  # CC : Added
 
 - type: loadout
   id: RoboticistJumpsuit
   equipment:
     jumpsuit: ClothingUniformJumpsuitRoboticist
+  groupBy: "roboticist_jumpers" # CC : Added
 
 - type: loadout
   id: RoboticistJumpskirt
   equipment:
     jumpsuit: ClothingUniformJumpskirtRoboticist
+  groupBy: "roboticist_jumpers" # CC : Added
 
 - type: loadout
   id: SeniorResearcherJumpsuit
@@ -66,6 +72,7 @@
     proto: SeniorResearcher
   equipment:
     jumpsuit: ClothingUniformJumpsuitSeniorResearcher
+  groupBy: "senior_jumpers" # CC : Added
 
 - type: loadout
   id: SeniorResearcherJumpskirt
@@ -74,48 +81,57 @@
     proto: SeniorResearcher
   equipment:
     jumpsuit: ClothingUniformJumpskirtSeniorResearcher
+  groupBy: "senior_jumpers" # CC : Added
 
 # Back
 - type: loadout
   id: ScientistBackpack
   equipment:
     back: ClothingBackpackScience
+  groupBy: "scientist_bags" # CC : Added
 
 - type: loadout
   id: ScientistSatchel
   equipment:
     back: ClothingBackpackSatchelScience
+  groupBy: "scientist_bags" # CC : Added
 
 - type: loadout
   id: ScientistDuffel
   equipment:
     back: ClothingBackpackDuffelScience
+  groupBy: "scientist_bags" # CC : Added
 
 # OuterClothing
 - type: loadout
   id: RegularLabCoat
   equipment:
     outerClothing: ClothingOuterCoatLab
+  groupBy: "lab_coats"  # CC : Added
 
 - type: loadout
   id: ScienceLabCoat
   equipment:
     outerClothing: ClothingOuterCoatRnd
+  groupBy: "lab_coats"  # CC : Added
 
 - type: loadout
   id: ScienceWintercoat
   equipment:
     outerClothing: ClothingOuterWinterSci
+  groupBy: "scientist_wintercoats"  # CC : Added
 
 - type: loadout
   id: RoboticistLabCoat
   equipment:
     outerClothing: ClothingOuterCoatRobo
+  groupBy: "lab_coats"  # CC : Added
 
 - type: loadout
   id: RoboticistWintercoat
   equipment:
     outerClothing: ClothingOuterWinterRobo
+  groupBy: "scientist_wintercoats"  # CC : Added
 
 - type: loadout
   id: SeniorResearcherLabCoat
@@ -124,6 +140,7 @@
     proto: SeniorResearcher
   equipment:
     outerClothing: ClothingOuterCoatLabSeniorResearcher
+  groupBy: "lab_coats"  # CC : Added
 
 # Gloves
 - type: loadout

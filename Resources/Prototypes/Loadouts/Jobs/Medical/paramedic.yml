@@ -1,3 +1,5 @@
+# !! CRIMSON COMMAND MODIFIED !! #
+
 # Head
 - type: loadout
   id: ParamedicHead
@@ -9,11 +11,13 @@
   id: ParamedicJumpsuit
   equipment:
     jumpsuit: ClothingUniformJumpsuitParamedic
+  groupBy: "paramedic_jumpers"  # CC : Added
 
 - type: loadout
   id: ParamedicJumpskirt
   equipment:
     jumpsuit: ClothingUniformJumpskirtParamedic
+  groupBy: "paramedic_jumpers"  # CC : Added
 
 # Outer clothing
 - type: loadout

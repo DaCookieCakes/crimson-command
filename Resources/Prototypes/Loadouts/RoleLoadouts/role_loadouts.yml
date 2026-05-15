@@ -5,14 +5,15 @@
   id: JobCaptain
   groups:
   - CaptainHead
-  - CaptainNeck
+# - CaptainNeck                 # CC : Replaced
+  - LoadoutGroupCaptainNeckwear # CC : Replaced
   - CaptainJumpsuit
   - CaptainOuterClothing
   - CaptainBackpack
-  - LoadoutGroupCaptainShoes # CC : Added
+  - LoadoutGroupCaptainShoes    # CC : Added
   - Survival
   - Trinkets
-  #- CaptainJobTrinkets
+# - CaptainJobTrinkets
   - GroupSpeciesBreathTool
 
 - type: roleLoadout
@@ -20,11 +21,12 @@
   groups:
   - GroupTankHarness
   - HoPHead
-  - HoPNeck
+# - HoPNeck                 # CC : Replaced
+  - LoadoutGroupHoPNeckwear # CC : Replaced
   - HoPJumpsuit
   - HoPOuterClothing
   - HoPBackpack
-  - LoadoutGroupHoPShoes # CC : Added
+  - LoadoutGroupHoPShoes    # CC : Added
   - Glasses
   - Survival
   - Trinkets

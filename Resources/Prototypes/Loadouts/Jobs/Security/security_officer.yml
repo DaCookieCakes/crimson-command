@@ -1,3 +1,5 @@
+# !! CRIMSON COMMAND MODIFIED !! #
+
 # Senior Time
 - type: loadoutEffectGroup
   id: SeniorOfficer
@@ -39,21 +41,25 @@
   id: SecurityJumpsuit
   equipment:
     jumpsuit: ClothingUniformJumpsuitSec
+  groupBy: "sec_jumpers"  # CC : Added
 
 - type: loadout
   id: SecurityJumpskirt
   equipment:
     jumpsuit: ClothingUniformJumpskirtSec
+  groupBy: "sec_jumpers"  # CC : Added
 
 - type: loadout
   id: SecurityJumpsuitGrey
   equipment:
     jumpsuit: ClothingUniformJumpsuitSecGrey
+  groupBy: "sec_grey_jumpers" # CC : Added
 
 - type: loadout
   id: SecurityJumpskirtGrey
   equipment:
     jumpsuit: ClothingUniformJumpskirtSecGrey
+  groupBy: "sec_grey_jumpers" # CC : Added
 
 - type: loadout
   id: TrooperUniform
@@ -67,6 +73,7 @@
     proto: SeniorOfficer
   equipment:
     jumpsuit: ClothingUniformJumpsuitSeniorOfficer
+  groupBy: "senior_jumpers" # CC : Added
 
 - type: loadout
   id: SeniorOfficerJumpskirt
@@ -75,22 +82,26 @@
     proto: SeniorOfficer
   equipment:
     jumpsuit: ClothingUniformJumpskirtSeniorOfficer
+  groupBy: "senior_jumpers" # CC : Added
 
 # Back
 - type: loadout
   id: SecurityBackpack
   equipment:
     back: ClothingBackpackSecurity
+  groupBy: "sec_bags" # CC : Added
 
 - type: loadout
   id: SecuritySatchel
   equipment:
     back: ClothingBackpackSatchelSecurity
+  groupBy: "sec_bags" # CC : Added
 
 - type: loadout
   id: SecurityDuffel
   equipment:
     back: ClothingBackpackDuffelSecurity
+  groupBy: "sec_bags" # CC : Added
 
 # Belt
 - type: loadout
@@ -108,11 +119,13 @@
   id: ArmorVest
   equipment:
     outerClothing: ClothingOuterArmorBasic
+  groupBy: "sec_vests"  # CC : Added
 
 - type: loadout
   id: ArmorVestSlim
   equipment:
     outerClothing: ClothingOuterArmorBasicSlim
+  groupBy: "sec_vests"  # CC : Added
 
 - type: loadout
   id: SecurityOfficerWintercoat
@@ -124,11 +137,13 @@
   id: CombatBoots
   equipment:
     shoes: ClothingShoesBootsCombatFilled
+  groupBy: "sec_boots"  # CC : Added
 
 - type: loadout
   id: JackBoots
   equipment:
     shoes: ClothingShoesBootsJackFilled
+  groupBy: "sec_boots"  # CC : Added
 
 - type: loadout
   id: SecurityWinterBoots

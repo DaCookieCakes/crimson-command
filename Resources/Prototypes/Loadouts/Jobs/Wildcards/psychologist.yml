@@ -1,10 +1,14 @@
+# !! CRIMSON COMMAND MODIFIED !! #
+
 # Jumpsuit
 - type: loadout
   id: PsychologistJumpsuit
   equipment:
     jumpsuit: ClothingUniformJumpsuitPsychologist
+  groupBy: "psych_jumpers"  # CC : Added
 
 - type: loadout
   id: PsychologistJumpskirt
   equipment:
     jumpsuit: ClothingUniformJumpskirtPsychologist
+  groupBy: "psych_jumpers"  # CC : Added

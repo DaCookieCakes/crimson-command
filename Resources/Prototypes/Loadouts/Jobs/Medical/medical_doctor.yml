@@ -1,3 +1,5 @@
+# !! CRIMSON COMMAND MODIFIED !! #
+
 # Head
 - type: loadout
   id: SeniorPhysicianBeret
@@ -6,6 +8,7 @@
     proto: SeniorPhysician
   equipment:
     head: ClothingHeadHatBeretSeniorPhysician
+  groupBy: "med_berets" # CC : Added
 
 - type: loadout
   id: MedicalHeadMirror
@@ -19,21 +22,25 @@
   id: MedicalBeret
   equipment:
     head: ClothingHeadHatBeretMedic
+  groupBy: "med_berets" # CC : Added
 
 - type: loadout
   id: BlueSurgeryCap
   equipment:
     head: ClothingHeadHatSurgcapBlue
+  groupBy: "surgery_caps" # CC : Added
 
 - type: loadout
   id: GreenSurgeryCap
   equipment:
     head: ClothingHeadHatSurgcapGreen
+  groupBy: "surgery_caps" # CC : Added
 
 - type: loadout
   id: PurpleSurgeryCap
   equipment:
     head: ClothingHeadHatSurgcapPurple
+  groupBy: "surgery_caps" # CC : Added
 
 - type: loadout
   id: NurseHat
@@ -45,11 +52,13 @@
   id: MedicalDoctorJumpsuit
   equipment:
     jumpsuit: ClothingUniformJumpsuitMedicalDoctor
+  groupBy: "med_jumpers"  # CC : Added
 
 - type: loadout
   id: MedicalDoctorJumpskirt
   equipment:
     jumpsuit: ClothingUniformJumpskirtMedicalDoctor
+  groupBy: "med_jumpers"  # CC : Added
 
 - type: loadout
   id: SeniorPhysicianJumpsuit
@@ -58,6 +67,7 @@
     proto: SeniorPhysician
   equipment:
     jumpsuit: ClothingUniformJumpsuitSeniorPhysician
+  groupBy: "senior_jumpers" # CC : Added
 
 - type: loadout
   id: SeniorPhysicianJumpskirt
@@ -66,37 +76,44 @@
     proto: SeniorPhysician
   equipment:
     jumpsuit: ClothingUniformJumpskirtSeniorPhysician
+  groupBy: "senior_jumpers" # CC : Added
 
 - type: loadout
   id: MedicalBlueScrubs
   equipment:
     jumpsuit: UniformScrubsColorBlue
+  groupBy: "med_scrubs" # CC : Added
 
 - type: loadout
   id: MedicalGreenScrubs
   equipment:
     jumpsuit: UniformScrubsColorGreen
+  groupBy: "med_scrubs" # CC : Added
 
 - type: loadout
   id: MedicalPurpleScrubs
   equipment:
     jumpsuit: UniformScrubsColorPurple
+  groupBy: "med_scrubs" # CC : Added
 
 # Back
 - type: loadout
   id: MedicalDoctorBackpack
   equipment:
     back: ClothingBackpackMedical
+  groupBy: "med_bags" # CC : Added
 
 - type: loadout
   id: MedicalDoctorSatchel
   equipment:
     back: ClothingBackpackSatchelMedical
+  groupBy: "med_bags" # CC : Added
 
 - type: loadout
   id: MedicalDoctorDuffel
   equipment:
     back: ClothingBackpackDuffelMedical
+  groupBy: "med_bags" # CC : Added
 
 # OuterClothing
 - type: loadout

@@ -1,3 +1,5 @@
+# !! CRIMSON COMMAND MODIFIED !! #
+
 # Head
 - type: loadout
   id: WardenHead
@@ -14,11 +16,13 @@
   id: WardenJumpsuit
   equipment:
     jumpsuit: ClothingUniformJumpsuitWarden
+  groupBy: "warden_jumpers" # CC : Added
 
 - type: loadout
   id: WardenJumpskirt
   equipment:
     jumpsuit: ClothingUniformJumpskirtWarden
+  groupBy: "warden_jumpers" # CC : Added
 
 # OuterClothing
 - type: loadout

@@ -1,3 +1,5 @@
+# !! CRIMSON COMMAND MODIFIED !! #
+
 # Senior times
 - type: loadoutEffectGroup
   id: SeniorEngineering
@@ -28,16 +30,19 @@
   id: StationEngineerHardhatYellow
   equipment:
     head: ClothingHeadHatHardhatYellow
+  groupBy: "hardhats" # CC : Added
 
 - type: loadout
   id: StationEngineerHardhatOrange
   equipment:
     head: ClothingHeadHatHardhatOrange
+  groupBy: "hardhats" # CC : Added
 
 - type: loadout
   id: StationEngineerHardhatRed
   equipment:
     head: ClothingHeadHatHardhatRed
+  groupBy: "hardhats" # CC : Added
 
 - type: loadout
   id: SeniorEngineerBeret
@@ -45,17 +50,20 @@
   effects:
   - !type:GroupLoadoutEffect
     proto: SeniorEngineering
+  groupBy: "engi_berets"  # CC : Added
 
 # Jumpsuit
 - type: loadout
   id: StationEngineerJumpsuit
   equipment:
     jumpsuit: ClothingUniformJumpsuitEngineering
+  groupBy: "engi_jumpers" # CC : Added
 
 - type: loadout
   id: StationEngineerJumpskirt
   equipment:
     jumpsuit: ClothingUniformJumpskirtEngineering
+  groupBy: "engi_jumpers" # CC : Added
 
 - type: loadout
   id: StationEngineerHazardsuit
@@ -69,6 +77,7 @@
     proto: SeniorEngineering
   equipment:
     jumpsuit: ClothingUniformJumpsuitSeniorEngineer
+  groupBy: "senior_jumpers" # CC : Added
 
 - type: loadout
   id: SeniorEngineerJumpskirt
@@ -77,22 +86,26 @@
     proto: SeniorEngineering
   equipment:
     jumpsuit: ClothingUniformJumpskirtSeniorEngineer
+  groupBy: "senior_jumpers" # CC : Added
 
 # Back
 - type: loadout
   id: StationEngineerBackpack
   equipment:
     back: ClothingBackpackEngineering
+  groupBy: "engi_bags"  # CC : Added
 
 - type: loadout
   id: StationEngineerSatchel
   equipment:
     back: ClothingBackpackSatchelEngineering
+  groupBy: "engi_bags"  # CC : Added
 
 - type: loadout
   id: StationEngineerDuffel
   equipment:
     back: ClothingBackpackDuffelEngineering
+  groupBy: "engi_bags"  # CC : Added
 
 # OuterClothing
 - type: loadout

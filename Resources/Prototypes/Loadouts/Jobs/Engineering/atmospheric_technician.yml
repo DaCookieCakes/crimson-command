@@ -1,34 +1,42 @@
+# !! CRIMSON COMMAND MODIFIED !! #
+
 # Jumpsuit
 - type: loadout
   id: AtmosphericTechnicianJumpsuit
   equipment:
     jumpsuit: ClothingUniformJumpsuitAtmos
+  groupBy: "atmos_jumpers"  # CC : Added
 
 - type: loadout
   id: AtmosphericTechnicianJumpskirt
   equipment:
     jumpsuit: ClothingUniformJumpskirtAtmos
+  groupBy: "atmos_jumpers"  # CC : Added
 
 - type: loadout
   id: AtmosphericTechnicianJumpsuitCasual
   equipment:
     jumpsuit: ClothingUniformJumpsuitAtmosCasual
+  groupBy: "atmos_jumpers"  # CC : Added
 
 # Back
 - type: loadout
   id: AtmosphericTechnicianBackpack
   equipment:
     back: ClothingBackpackAtmospherics
+  groupBy: "atmos_bags" # CC : Added
 
 - type: loadout
   id: AtmosphericTechnicianSatchel
   equipment:
     back: ClothingBackpackSatchelAtmospherics
+  groupBy: "atmos_bags" # CC : Added
 
 - type: loadout
   id: AtmosphericTechnicianDuffel
   equipment:
     back: ClothingBackpackDuffelAtmospherics
+  groupBy: "atmos_bags" # CC : Added
 
 # OuterClothing
 - type: loadout

@@ -1,13 +1,17 @@
+# !! CRIMSON COMMAND MODIFIED !! #
+
 # Head
 - type: loadout
   id: DetectiveFedora
   equipment:
     head: ClothingHeadHatFedoraBrown
+  groupBy: "detective_fedoras" # CC : Added
 
 - type: loadout
   id: DetectiveFedoraGrey
   equipment:
     head: ClothingHeadHatFedoraGrey
+  groupBy: "detective_fedoras" # CC : Added
 
 # Neck
 - type: loadout
@@ -20,21 +24,25 @@
   id: DetectiveJumpsuit
   equipment:
     jumpsuit: ClothingUniformJumpsuitDetective
+  groupBy: "detective_jumpers"  # CC : Added
 
 - type: loadout
   id: DetectiveJumpskirt
   equipment:
     jumpsuit: ClothingUniformJumpskirtDetective
+  groupBy: "detective_jumpers"  # CC : Added
 
 - type: loadout
   id: NoirJumpsuit
   equipment:
     jumpsuit: ClothingUniformJumpsuitDetectiveGrey
+  groupBy: "noir_jumpers"  # CC : Added
 
 - type: loadout
   id: NoirJumpskirt
   equipment:
     jumpsuit: ClothingUniformJumpskirtDetectiveGrey
+  groupBy: "noir_jumpers"  # CC : Added
 
 # OuterClothing
 - type: loadout
@@ -46,8 +54,10 @@
   id: DetectiveCoat
   equipment:
     outerClothing: ClothingOuterCoatDetectiveLoadout
+  groupBy: "detective_coats"  # CC : Added
 
 - type: loadout
   id: DetectiveCoatGrey
   equipment:
     outerClothing: ClothingOuterCoatDetectiveLoadoutGrey
+  groupBy: "detective_coats"  # CC : Added

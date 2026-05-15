@@ -1,5 +1,8 @@
 # COMMAND #
+loadout-group-captain-neckwear = Captain neckwear
 loadout-group-captain-shoes = Captain footwear
+
+loadout-group-hop-neckwear = HoP neckwear
 loadout-group-hop-shoes = HoP footwear
 
 # CIVILIAN #

@@ -1,3 +1,5 @@
+# !! CRIMSON COMMAND MODIFIED !! #
+
 # For mantles
 - type: loadoutEffectGroup
   id: MasterHoS
@@ -13,37 +15,42 @@
   id: HeadofSecurityJumpsuit
   equipment:
     jumpsuit: ClothingUniformJumpsuitHoS
-  groupBy: "jumpsuit"
+# groupBy: "jumpsuit"     # CC : Replaced
+  groupBy: "HoS_jumpers"  # CC : Replaced
 
 - type: loadout
   id: HeadofSecurityJumpskirt
   equipment:
     jumpsuit: ClothingUniformJumpskirtHoS
-  groupBy: "jumpskirt"
+# groupBy: "jumpskirt"    # CC : Replaced
+  groupBy: "HoS_jumpers"  # CC : Replaced
 
 - type: loadout
   id: HeadofSecurityTurtleneck
   equipment:
     jumpsuit: ClothingUniformJumpsuitHoSAlt
-  groupBy: "jumpsuit"
+# groupBy: "jumpsuit"         # CC : Replaced
+  groupBy: "HoS_turtlenecks"  # CC : Replaced
 
 - type: loadout
   id: HeadofSecurityTurtleneckSkirt
   equipment:
-    jumpsuit: ClothingUniformJumpskirtHoSAlt
-  groupBy: "jumpskirt"
+# groupBy: "jumpskirt"        # CC : Replaced
+  groupBy: "HoS_turtlenecks"  # CC : Replaced
 
 - type: loadout
   id: HeadofSecurityFormalSuit
   equipment:
     jumpsuit: ClothingUniformJumpsuitHosFormal
-  groupBy: "jumpsuit"
+# groupBy: "jumpsuit"     # CC : Replaced
+  groupBy: "HoS_formal"   # CC : Replaced
 
 - type: loadout
   id: HeadofSecurityFormalSkirt
   equipment:
     jumpsuit: ClothingUniformJumpskirtHosFormal
-  groupBy: "jumpskirt"
+# groupBy: "jumpskirt"    # CC : Replaced
+  groupBy: "HoS_formal"   # CC : Replaced
 
 # Head
 - type: loadout

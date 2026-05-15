@@ -1,5 +1,14 @@
 # LOADOUT GROUPS #
 - type: loadoutGroup
+  id: LoadoutGroupHoPNeckwear
+  name: loadout-group-hop-neckwear
+  minLimit: 0
+  loadouts:
+  - HoPCloak
+  - HoPMantle
+  - LoadoutBlueScarf
+
+- type: loadoutGroup
   id: LoadoutGroupHoPShoes
   name: loadout-group-hop-shoes
   passengerFallback: true

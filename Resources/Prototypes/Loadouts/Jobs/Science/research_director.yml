@@ -1,3 +1,5 @@
+# !! CRIMSON COMMAND MODIFIED !! #
+
 # For mantles
 - type: loadoutEffectGroup
   id: MasterRD
@@ -37,11 +39,13 @@
   id: ResearchDirectorJumpsuit
   equipment:
     jumpsuit: ClothingUniformJumpsuitResearchDirector
+  groupBy: "RD_jumpers" # CC : Added
 
 - type: loadout
   id: ResearchDirectorJumpskirt
   equipment:
     jumpsuit: ClothingUniformJumpskirtResearchDirector
+  groupBy: "RD_jumpers" # CC : Added
 
 # OuterClothing
 - type: loadout

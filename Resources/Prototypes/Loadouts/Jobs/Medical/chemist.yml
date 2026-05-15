@@ -1,29 +1,36 @@
+# !! CRIMSON COMMAND MODIFIED !! #
+
 # Jumpsuit
 - type: loadout
   id: ChemistJumpsuit
   equipment:
     jumpsuit: ClothingUniformJumpsuitChemistry
+  groupBy: "chemist_jumpers"  # CC : Added
 
 - type: loadout
   id: ChemistJumpskirt
   equipment:
     jumpsuit: ClothingUniformJumpskirtChemistry
+  groupBy: "chemist_jumpers"  # CC : Added
 
 # Back
 - type: loadout
   id: ChemistBackpack
   equipment:
     back: ClothingBackpackChemistry
+  groupBy: "chemist_bags" # CC : Added
 
 - type: loadout
   id: ChemistSatchel
   equipment:
     back: ClothingBackpackSatchelChemistry
+  groupBy: "chemist_bags" # CC : Added
 
 - type: loadout
   id: ChemistDuffel
   equipment:
     back: ClothingBackpackDuffelChemistry
+  groupBy: "chemist_bags" # CC : Added
 
 # Outer clothing
 - type: loadout
