@@ -7,6 +7,8 @@ using Robust.Shared.Prototypes;
 using Robust.Shared.Serialization;
 using static Content.Shared.Decals.DecalGridComponent;
 
+// !! CRIMSON COMMAND MODIFIED !! //
+
 namespace Content.Shared.Decals
 {
     public abstract class SharedDecalSystem : EntitySystem
@@ -143,9 +145,12 @@ namespace Content.Shared.Decals
     {
         public NetCoordinates Coordinates;
 
-        public RequestDecalRemovalEvent(NetCoordinates coordinates)
+        public uint? DecalId; // CC : Added
+
+        public RequestDecalRemovalEvent(NetCoordinates coordinates, uint? decalId = null)
         {
             Coordinates = coordinates;
+            DecalId = decalId;
         }
     }
 }

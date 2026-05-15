@@ -6,6 +6,7 @@ using Robust.Shared.Console;
 
 namespace Content.Client.Commands;
 
+// !! CRIMSON COMMAND MODIFIED !! //
 internal sealed class MappingClientSideSetupCommand : LocalizedEntityCommands
 {
     [Dependency] private readonly ILightManager _lightManager = default!;
@@ -23,7 +24,9 @@ internal sealed class MappingClientSideSetupCommand : LocalizedEntityCommands
         _markerSystem.MarkersVisible = true;
         _lightManager.Enabled = false;
         _subfloorSystem.ShowAll = true;
-        _actionSystem.LoadActionAssignments("/mapping_actions.yml", false);
+
+        // CC : Removed these weird mapping actions stuff.
+        // _actionSystem.LoadActionAssignments("/mapping_actions.yml", false);
     }
 }
 
