@@ -1,7 +1,11 @@
+# !! CRIMSON COMMAND MODIFIED !! #
+
 - type: entity
   name: comfortable bench
   id: BenchComfy
   parent: SeatBase
+  placement:  # CC : Added
+    mode: AlignTileAny
   description: A bench with an extremely comfortable backrest.
   components:
   - type: Transform

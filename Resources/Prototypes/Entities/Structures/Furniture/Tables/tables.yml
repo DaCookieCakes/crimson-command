@@ -1,3 +1,5 @@
+# !! CRIMSON COMMAND MODIFIED !! #
+
 - type: entity
   id: TableFrame
   # BaseStructure and not BaseTable, since these shouldn't be climbable/placeable.
@@ -158,7 +160,7 @@
 - type: entity
   id: Table
   parent: TableBase
-  name: table
+  name: steel table # CC : "table" -> "steel table"
   description: A square piece of metal standing on four metal legs.
   components:
   - type: Sprite
@@ -515,7 +517,7 @@
 - type: entity
   id: TableWood
   parent: TableBase
-  name: wood table
+  name: wooden table # CC : "wood table" -> "wooden table"
   description: Do not apply fire to this. Rumour says it burns easily.
   components:
   - type: Sprite
