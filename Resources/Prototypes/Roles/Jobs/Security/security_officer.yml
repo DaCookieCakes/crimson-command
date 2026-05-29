@@ -1,3 +1,5 @@
+# !! CRIMSON COMMAND MODIFIED !! #
+
 - type: job
   id: SecurityOfficer
   name: job-name-security
@@ -24,13 +26,13 @@
 - type: startingGear
   id: SecurityOfficerGear
   equipment:
-    eyes: ClothingEyesGlassesSecurity
+#   eyes: ClothingEyesGlassesSecurity # CC: Moved to loadouts.
     ears: ClothingHeadsetSecurity
-    pocket1: WeaponPistolMk58
-  storage:
-    back:
-    - Flash
-    - MagazinePistol
+#   pocket1: WeaponPistolMk58 # CC: Moved to loadouts.
+# storage:
+#   back:
+#   - Flash # CC: Moved to loadouts.
+#   - MagazinePistol # CC: Moved to loadouts.
 
 - type: chameleonOutfit
   id: SecurityOfficerChameleonOutfit

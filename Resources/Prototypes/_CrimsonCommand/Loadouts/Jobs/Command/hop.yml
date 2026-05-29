@@ -1,3 +1,9 @@
+# LOADOUTS #
+- type: loadout
+  id: LoadoutHoPWinterBoots
+  equipment:
+    shoes: EntClothesHoPWinterBoots
+
 # LOADOUT GROUPS #
 - type: loadoutGroup
   id: LoadoutGroupHoPNeckwear
@@ -11,7 +17,6 @@
 - type: loadoutGroup
   id: LoadoutGroupHoPShoes
   name: loadout-group-hop-shoes
-  passengerFallback: true
   passengerFallbackGroup: LoadoutGroupPassengerFootwear
   minLimit: 0
   defaultSelected: 1
@@ -20,6 +25,7 @@
   - LoadoutBlackShoes
   - LoadoutBrownShoes
   - LoadoutBlueShoes
+  - LoadoutHoPWinterBoots
   - LoadoutBlackWinterBoots
   - LoadoutBrownWinterBoots
   - LoadoutBlueWinterBoots

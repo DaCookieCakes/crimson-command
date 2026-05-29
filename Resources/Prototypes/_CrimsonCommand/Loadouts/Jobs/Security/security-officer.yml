@@ -1,0 +1,172 @@
+# LOADOUTS #
+
+# headwear
+- type: loadout
+  id: LoadoutSecurityOfficerHelmet
+  equipment:
+    head: ClothingHeadHelmetBasic
+
+- type: loadout
+  id: LoadoutSecurityOfficerBeret
+  equipment:
+    head: ClothingHeadHatBeretSecurity
+
+- type: loadout
+  id: LoadoutSecurityOfficerTrooperHat
+  equipment:
+    head: ClothingHeadHatSecurityTrooper
+
+# jumpers
+- type: loadout
+  id: LoadoutSecurityTrooperJumpsuit
+  equipment:
+    jumpsuit: EntClothesSecurityTrooperJumpsuit
+  groupBy: "job_jumpers_3"
+
+- type: loadout
+  id: LoadoutSecurityTrooperJumpskirt
+  equipment:
+    jumpsuit: EntClothesSecurityTrooperJumpskirt
+  groupBy: "job_jumpers_3"
+
+- type: loadout
+  id: LoadoutSeniorOfficerJumpsuit
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: SeniorOfficer
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitSeniorOfficer
+  groupBy: "senior_jumpers"
+
+- type: loadout
+  id: LoadoutSeniorOfficerJumpskirt
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: SeniorOfficer
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtSeniorOfficer
+  groupBy: "senior_jumpers"
+
+# PDAs
+- type: loadout
+  id: LoadoutSecurityPDA
+  equipment:
+    id: SecurityPDA
+
+- type: loadout
+  id: LoadoutSeniorOfficerPDA
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: SeniorOfficer
+  equipment:
+    id: SeniorOfficerPDA
+
+# weapons
+# New weapon category, with up to two selectable.
+- type: loadout
+  id: LoadoutSecurityCombatKnife
+  storage:
+    back:
+    - CombatKnife
+  groupBy: "job_melee"
+
+- type: loadout
+  id: LoadoutSecurityTruncheon
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: SeniorOfficer
+  storage:
+    back:
+    - Truncheon
+  groupBy: "job_melee"
+
+- type: loadout
+  id: LoadoutSecurityDisablerSMG
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: SeniorOfficer
+  equipment:
+    pocket1: WeaponDisablerSMG
+  groupBy: "job_projectiles_stun"
+
+- type: loadout
+  id: LoadoutSecurityTaser
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: SeniorOfficer
+  equipment:
+    pocket1: WeaponTaser
+  groupBy: "job_projectiles_stun"
+
+# trinkets
+- type: loadout
+  id: LoadoutSecurityOfficerLizardPlushie
+  storage:
+    back:
+    - PlushieLizardJobSecurityofficer
+
+# LOADOUT GROUPS #
+- type: loadoutGroup
+  id: LoadoutGroupSecurityOfficerHeadwear
+  name: loadout-group-secoff-headwear
+  minLimit: 0
+  loadouts:
+  - LoadoutSecurityOfficerHelmet
+  - LoadoutSecurityHat
+  - LoadoutSecurityOfficerBeret
+  - LoadoutSecurityOfficerTrooperHat
+
+- type: loadoutGroup
+  id: LoadoutGroupWardenNeckwear
+  name: loadout-group-warden-neckwear
+  passengerFallbackGroup: LoadoutGroupPassengerNeckwear
+  minLimit: 0
+  loadouts:
+  - LoadoutBlackScarf
+  - LoadoutBlueScarf
+  - LoadoutRedScarf
+
+- type: loadoutGroup
+  id: LoadoutGroupSecurityOfficerJumpers
+  name: loadout-group-secoff-jumpers
+  loadouts:
+  - LoadoutSecurityJumpsuit
+  - LoadoutSecurityJumpskirt
+  - LoadoutGreySecurityJumpsuit
+  - LoadoutGreySecurityJumpskirt
+  - LoadoutSecurityTrooperJumpsuit
+  - LoadoutSecurityTrooperJumpskirt
+  - LoadoutSeniorOfficerJumpsuit
+  - LoadoutSeniorOfficerJumpskirt
+
+- type: loadoutGroup
+  id: LoadoutGroupSecurityOfficerPDA
+  name: loadout-group-secoff-pdas
+  loadouts:
+  - LoadoutSecurityPDA
+  - LoadoutSeniorOfficerPDA
+
+- type: loadoutGroup
+  id: LoadoutGroupSecurityOfficerWeapons
+  name: loadout-group-secoff-weapons
+  minLimit: 0
+  maxLimit: 2
+  loadouts:
+  - LoadoutWeaponStunBaton
+  - LoadoutWeaponFlash
+  - LoadoutSecurityCombatKnife
+  - LoadoutSecurityTruncheon
+  - LoadoutDisabler
+  - LoadoutSecurityDisablerSMG
+  - LoadoutSecurityTaser
+  - LoadoutSecurityPistolMK58
+  - LoadoutSecurityPistolInspector
+
+- type: loadoutGroup
+  id: LoadoutGroupSecurityOfficerTrinkets
+  name: loadout-group-jobtrinkets
+  minLimit: 0
+  maxLimit: 2
+  loadouts:
+  - SecStar
+  - LoadoutSecurityOfficerLizardPlushie # Eff you, WizDen! Job trinket plushies are PEAK.

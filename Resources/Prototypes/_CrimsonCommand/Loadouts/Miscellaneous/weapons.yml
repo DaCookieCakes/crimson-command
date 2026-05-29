@@ -1,0 +1,21 @@
+# melee
+- type: loadout
+  id: LoadoutWeaponStunBaton
+  storage:
+    back:
+    - Stunbaton
+  groupBy: "misc_melee_stun"
+
+- type: loadout
+  id: LoadoutWeaponFlash
+  storage:
+    back:
+    - Flash
+  groupBy: "misc_melee_stun"
+
+# guns
+- type: loadout
+  id: LoadoutDisabler
+  equipment:
+    pocket1: WeaponDisabler
+  groupBy: "misc_projectiles_stun"

@@ -71,7 +71,6 @@
 - type: loadoutGroup
   id: LoadoutGroupBartenderOuterwear
   name: loadout-group-bartender-outerwear
-  passengerFallback: true
   passengerFallbackGroup: LoadoutGroupPassengerOuterwear
   minLimit: 0
   loadouts:
@@ -85,7 +84,6 @@
 - type: loadoutGroup
   id: LoadoutGroupBartenderNeckwear
   name: loadout-group-bartender-neckwear
-  passengerFallback: true
   passengerFallbackGroup: LoadoutGroupPassengerNeckwear
   minLimit: 0
   loadouts:
@@ -95,7 +93,6 @@
 - type: loadoutGroup
   id: LoadoutGroupBartenderFootwear
   name: loadout-group-bartender-footwear
-  passengerFallback: true
   passengerFallbackGroup: LoadoutGroupPassengerFootwear
   minLimit: 0
   defaultSelected: 1

@@ -5,6 +5,37 @@ loadout-group-captain-shoes = Captain footwear
 loadout-group-hop-neckwear = HoP neckwear
 loadout-group-hop-shoes = HoP footwear
 
+# SECURITY #
+loadout-group-sec-eyewear = Security eyewear
+loadout-group-sec-neckwear = Security neckwear
+loadout-group-sec-outerwear = Security outerwear
+loadout-group-sec-bags = Security bags
+loadout-group-sec-belts = Security belts
+loadout-group-sec-footwear = Security footwear
+
+loadout-group-sec-cadet-headwear = Cadet headwear
+loadout-group-sec-cadet-jumpers = Cadet jumpers
+loadout-group-sec-cadet-weapons = Cadet weapons
+
+loadout-group-secoff-headwear = Officer headwear
+loadout-group-secoff-jumpers = Officer jumpers
+loadout-group-secoff-pdas = Officer PDAs
+loadout-group-secoff-weapons = Officer weapons
+
+loadout-group-det-headwear = Detective headwear
+loadout-group-det-neckwear = Detective neckwear
+loadout-group-det-jumpers = Detective jumpers
+loadout-group-det-outerwear = Detective outerwear
+loadout-group-det-handwear = Detective handwear
+loadout-group-det-footwear = Detective footwear
+loadout-group-det-weapons = Detective weapons
+
+loadout-group-warden-headwear = Warden headwear
+loadout-group-warden-neckwear = Warden neckwear
+loadout-group-warden-jumpers = Warden jumpers
+loadout-group-warden-outerwear = Warden outerwear
+loadout-group-warden-weapons = Warden weapons
+
 # CIVILIAN #
 loadout-group-bartender-jumpers = Bartender jumpers
 loadout-group-bartender-outerwear = Bartender outerwear

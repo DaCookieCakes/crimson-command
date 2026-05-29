@@ -1,0 +1,181 @@
+# LOADOUTS #
+
+# headwear
+- type: loadout
+  id: LoadoutDetectiveFedoraBrown
+  equipment:
+    head: ClothingHeadHatFedoraBrown
+  groupBy: "job_headwear"
+
+- type: loadout
+  id: LoadoutDetectiveFedoraGrey
+  equipment:
+    head: ClothingHeadHatFedoraGrey
+  groupBy: "job_headwear"
+
+- type: loadout
+  id: LoadoutDetectiveGoGoHat
+  equipment:
+    head: ClothingHeadHatDetGadget
+  groupBy: "job_headwear"
+
+# neckwear
+- type: loadout
+  id: LoadoutDetectiveNecktie
+  equipment:
+    neck: ClothingNeckTieDet
+
+# jumpers
+- type: loadout
+  id: LoadoutDetectiveHardwornSuit
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitDetective
+  groupBy: "job_jumpers"
+
+- type: loadout
+  id: LoadoutDetectiveHardwornSuitskirt
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtDetective
+  groupBy: "job_jumpers"
+
+- type: loadout
+  id: LoadoutDetectiveNoirSuit
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitDetectiveGrey
+  groupBy: "job_jumpers_2"
+
+- type: loadout
+  id: LoadoutDetectiveNoirSuitskirt
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtDetectiveGrey
+  groupBy: "job_jumpers_2"
+
+# outerwear
+- type: loadout
+  id: LoadoutDetectiveVest
+  equipment:
+    outerClothing: ClothingOuterVestDetective
+  groupBy: "job_vests"
+
+- type: loadout
+  id: LoadoutDetectiveArmoredTrenchcoat
+  equipment:
+    outerClothing: EntClothesOuterDetectivesArmoredTrenchcoat
+  groupBy: "job_coats"
+
+- type: loadout
+  id: LoadoutNoirArmoredTrenchcoat
+  equipment:
+    outerClothing: EntClothesOuterNoirArmoredTrenchcoat
+  groupBy: "job_coats"
+
+- type: loadout
+  id: LoadoutDetectiveTrenchcoat
+  equipment:
+    outerClothing: EntClothesOuterDetectivesTrenchcoat
+  groupBy: "job_coats_2"
+
+- type: loadout
+  id: LoadoutNoirTrenchcoat
+  equipment:
+    outerClothing: EntClothesOuterNoirTrenchcoat
+  groupBy: "job_coats_2"
+
+# handwear
+- type: loadout
+  id: LoadoutDetectiveForensicGloves
+  equipment:
+    gloves: ClothingHandsGlovesForensic
+
+# trinkets
+- type: loadout
+  id: LoadoutDetectiveLizardPlushie
+  storage:
+    back:
+    - PlushieLizardJobDetective
+
+
+# LOADOUT GROUPS #
+- type: loadoutGroup
+  id: LoadoutGroupDetectiveHeadwear
+  name: loadout-group-det-headwear
+  minLimit: 0
+  loadouts:
+  - LoadoutDetectiveFedoraBrown
+  - LoadoutDetectiveFedoraGrey
+  - LoadoutDetectiveGoGoHat
+
+- type: loadoutGroup
+  id: LoadoutGroupDetectiveNeckwear
+  name: loadout-group-det-neckwear
+  passengerFallbackGroup: LoadoutGroupPassengerNeckwear
+  minLimit: 0
+  loadouts:
+  - LoadoutDetectiveNecktie
+  - LoadoutBlackScarf
+  - LoadoutBrownScarf
+
+- type: loadoutGroup
+  id: LoadoutGroupDetectiveJumpers
+  name: loadout-group-det-jumpers
+  loadouts:
+  - LoadoutDetectiveHardwornSuit
+  - LoadoutDetectiveHardwornSuitskirt
+  - LoadoutDetectiveNoirSuit
+  - LoadoutDetectiveNoirSuitskirt
+
+- type: loadoutGroup
+  id: LoadoutGroupDetectiveOuterwear
+  name: loadout-group-det-outerwear
+  passengerFallbackGroup: LoadoutGroupPassengerOuterwear
+  minLimit: 0
+  defaultSelected: 1
+  loadouts:
+  - LoadoutDetectiveVest
+  - LoadoutDetectiveArmoredTrenchcoat
+  - LoadoutNoirArmoredTrenchcoat
+  - LoadoutDetectiveTrenchcoat
+  - LoadoutNoirTrenchcoat
+
+- type: loadoutGroup
+  id: LoadoutGroupDetectiveHandwear
+  name: loadout-group-det-handwear
+  minLimit: 0
+  defaultSelected: 1
+  loadouts:
+  - LoadoutDetectiveForensicGloves
+  - LoadoutBlackGloves
+
+- type: loadoutGroup
+  id: LoadoutGroupDetectiveWeapons
+  name: loadout-group-det-weapons
+  minLimit: 0
+  maxLimit: 2
+  loadouts:
+  - LoadoutWeaponStunBaton
+  - LoadoutWeaponFlash
+  - LoadoutDisabler
+  - LoadoutSecurityPistolInspector
+
+- type: loadoutGroup
+  id: LoadoutGroupDetectiveFootwear
+  name: loadout-group-det-footwear
+  passengerFallbackGroup: LoadoutGroupPassengerFootwear
+  minLimit: 0 # This is probably a bad idea, job-wise... but we remain silly :3
+  defaultSelected: 1
+  loadouts:
+  - LoadoutLaceupShoes
+  - LoadoutBlackWinterBoots
+  - LoadoutBrownWinterBoots
+  - LoadoutSecurityCombatBoots
+  - LoadoutSecurityJackBoots
+  - LoadoutSecurityWinterBoots
+
+- type: loadoutGroup
+  id: LoadoutGroupDetectiveTrinkets
+  name: loadout-group-jobtrinkets
+  minLimit: 0
+  maxLimit: 2
+  loadouts:
+  - SecStar
+  - LoadoutDetectiveLizardPlushie

@@ -55,13 +55,6 @@ public sealed partial class LoadoutGroupPrototype : IPrototype, IInheritingProto
 
     /// <summary>
     ///     CRIMSON COMMAND SPECIFIC
-    ///     Which loadout groups can default to passenger.
-    /// </summary>
-    [DataField]
-    public bool PassengerFallback;
-
-    /// <summary>
-    ///     CRIMSON COMMAND SPECIFIC
     ///     What passenger group this points to.
     /// </summary>
     [DataField]

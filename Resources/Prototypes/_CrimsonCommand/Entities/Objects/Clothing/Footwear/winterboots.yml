@@ -1,10 +1,12 @@
+# Colorable winter boots
+
 - type: entity
   parent: ClothingShoesBaseWinterBoots
   id: EntClothesBlackWinterBoots
   name: black winter boots
   components:
   - type: Sprite
-    sprite: _CrimsonCommand/Clothing/Footwear/colorable-winterboots.rsi
+    sprite: _CrimsonCommand/Clothing/Footwear/Winterboots/colorable.rsi
     layers:
     - state: icon
       color: "#3f3f3f"
@@ -33,7 +35,7 @@
   name: white winter boots
   components:
   - type: Sprite
-    sprite: _CrimsonCommand/Clothing/Footwear/colorable-winterboots.rsi
+    sprite: _CrimsonCommand/Clothing/Footwear/Winterboots/colorable.rsi
     layers:
     - state: icon
       color: "#EAE8E8"
@@ -62,7 +64,7 @@
   name: blue winter boots
   components:
   - type: Sprite
-    sprite: _CrimsonCommand/Clothing/Footwear/colorable-winterboots.rsi
+    sprite: _CrimsonCommand/Clothing/Footwear/Winterboots/colorable.rsi
     layers:
     - state: icon
       color: "#0089EF"
@@ -91,7 +93,7 @@
   name: brown winter boots
   components:
   - type: Sprite
-    sprite: _CrimsonCommand/Clothing/Footwear/colorable-winterboots.rsi
+    sprite: _CrimsonCommand/Clothing/Footwear/Winterboots/colorable.rsi
     layers:
     - state: icon
       color: "#723A02"
@@ -120,7 +122,7 @@
   name: green winter boots
   components:
   - type: Sprite
-    sprite: _CrimsonCommand/Clothing/Footwear/colorable-winterboots.rsi
+    sprite: _CrimsonCommand/Clothing/Footwear/Winterboots/colorable.rsi
     layers:
     - state: icon
       color: "#5ABF2F"
@@ -149,7 +151,7 @@
   name: orange winter boots
   components:
   - type: Sprite
-    sprite: _CrimsonCommand/Clothing/Footwear/colorable-winterboots.rsi
+    sprite: _CrimsonCommand/Clothing/Footwear/Winterboots/colorable.rsi
     layers:
     - state: icon
       color: "#EF8100"
@@ -178,7 +180,7 @@
   name: red winter boots
   components:
   - type: Sprite
-    sprite: _CrimsonCommand/Clothing/Footwear/colorable-winterboots.rsi
+    sprite: _CrimsonCommand/Clothing/Footwear/Winterboots/colorable.rsi
     layers:
     - state: icon
       color: "#940000"
@@ -207,7 +209,7 @@
   name: yellow winter boots
   components:
   - type: Sprite
-    sprite: _CrimsonCommand/Clothing/Footwear/colorable-winterboots.rsi
+    sprite: _CrimsonCommand/Clothing/Footwear/Winterboots/colorable.rsi
     layers:
     - state: icon
       color: "#EBE216"
@@ -236,7 +238,7 @@
   name: purple winter boots
   components:
   - type: Sprite
-    sprite: _CrimsonCommand/Clothing/Footwear/colorable-winterboots.rsi
+    sprite: _CrimsonCommand/Clothing/Footwear/Winterboots/colorable.rsi
     layers:
     - state: icon
       color: "#9C0DE1"
@@ -258,3 +260,28 @@
       - state: equipped-FEET
         color: "#9C0DE1"
       - state: soles-equipped-FEET
+
+# Command winter boots
+- type: entity
+  parent: [ ClothingShoesBaseWinterBoots, BaseCommandContraband ]
+  id: EntClothesCaptainWinterBoots
+  name: captain's winter boots
+  description: Fluffy boots to help survive even the coldest of winters. These ones come in a slick blue and gold color!
+  suffix: Captain, CrimsonCommand
+  components:
+  - type: Sprite
+    sprite: _CrimsonCommand/Clothing/Footwear/Winterboots/captain.rsi
+  - type: Clothing
+    sprite: _CrimsonCommand/Clothing/Footwear/Winterboots/captain.rsi
+
+- type: entity
+  parent: ClothingShoesBaseWinterBoots
+  id: EntClothesHoPWinterBoots
+  name: HoP's winter boots
+  description: Fluffy boots to help survive even the coldest of winters. These ones are extra papercut-proof.
+  suffix: HoP, CrimsonCommand
+  components:
+  - type: Sprite
+    sprite: _CrimsonCommand/Clothing/Footwear/Winterboots/hop.rsi
+  - type: Clothing
+    sprite: _CrimsonCommand/Clothing/Footwear/Winterboots/hop.rsi

@@ -1,0 +1,23 @@
+- type: entity # Same as the OG jumpsuit, just separated here for easier access.
+  parent: [ClothingUniformBase, BaseSecurityContraband]
+  id: EntClothesSecurityTrooperJumpsuit
+  name: trooper jumpsuit
+  description: A formal uniform issued to the old Nanotrasen Troopers, supposedly came with a car.
+  suffix: Security, CrimsonCommand
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpsuit/security_trooper.rsi
+  - type: Clothing
+    sprite: Clothing/Uniforms/Jumpsuit/security_trooper.rsi
+
+- type: entity
+  parent: [ ClothingUniformBase, BaseSecurityContraband ]
+  id: EntClothesSecurityTrooperJumpskirt
+  name: trooper jumpskirt
+  description: A formal uniform issued to the old Nanotrasen Troopers, supposedly came with a car.
+  suffix: Security, CrimsonCommand
+  components:
+  - type: Sprite
+    sprite: _CrimsonCommand/Clothing/Jumpers/security_trooper_jumpskirt.rsi
+  - type: Clothing
+    sprite: _CrimsonCommand/Clothing/Jumpers/security_trooper_jumpskirt.rsi

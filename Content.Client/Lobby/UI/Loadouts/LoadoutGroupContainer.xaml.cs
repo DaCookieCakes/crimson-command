@@ -36,7 +36,7 @@ public sealed partial class LoadoutGroupContainer : BoxContainer
         _groupProto = groupProto;
 
         RefreshLoadouts(profile, loadout, session, collection);
-        if (_groupProto.PassengerFallback)
+        if (_groupProto.PassengerFallbackGroup != null)
         {
             PassengerFallbackPanel.Visible = true;
             PassengerFallbackCheck.Pressed = loadout.PassengerFallbackGroups.Contains(_groupProto.ID);
@@ -58,7 +58,7 @@ public sealed partial class LoadoutGroupContainer : BoxContainer
     public void RefreshLoadouts(HumanoidCharacterProfile profile, RoleLoadout loadout, ICommonSession session, IDependencyCollection collection)
     {
         // CRIMSON COMMAND SPECIFIC //
-        if (_groupProto.PassengerFallback)
+        if (_groupProto.PassengerFallbackGroup != null)
             PassengerFallbackCheck.Pressed = loadout.PassengerFallbackGroups.Contains(_groupProto.ID);
 
         var protoMan = collection.Resolve<IPrototypeManager>();

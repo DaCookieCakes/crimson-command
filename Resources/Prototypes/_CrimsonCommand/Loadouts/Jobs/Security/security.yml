@@ -1,0 +1,204 @@
+# LOADOUTS #
+
+# headwear
+- type: loadout
+  id: LoadoutSecurityHat
+  equipment:
+    head: ClothingHeadHatSecsoft
+
+# eyewear
+# New eyewear category.
+- type: loadout
+  id: LoadoutSecurityHUD
+  equipment:
+    eyes: ClothingEyesGlassesSecurity
+  groupBy: "job_eyewear"
+
+- type: loadout
+  id: LoadoutSecurityPrescriptionHUD
+  equipment:
+    eyes: EntClothesSecurityPrescriptionHUD
+  groupBy: "job_eyewear"
+
+- type: loadout
+  id: LoadoutSecurityEyepatch
+  equipment:
+    eyes: ClothingEyesEyepatchHudSecurity
+  groupBy: "job_eyewear"
+
+# jumpers
+- type: loadout
+  id: LoadoutSecurityJumpsuit
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitSec
+  groupBy: "job_jumpers"
+
+- type: loadout
+  id: LoadoutSecurityJumpskirt
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtSec
+  groupBy: "job_jumpers"
+
+- type: loadout
+  id: LoadoutGreySecurityJumpsuit
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitSecGrey
+  groupBy: "job_jumpers_2"
+
+- type: loadout
+  id: LoadoutGreySecurityJumpskirt
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtSecGrey
+  groupBy: "job_jumpers_2"
+
+# Outerclothing
+- type: loadout
+  id: LoadoutSecurityArmorVest
+  equipment:
+    outerClothing: ClothingOuterArmorBasic
+  groupBy: "job_vests"
+
+- type: loadout
+  id: LoadoutSecuritySlimArmorVest
+  equipment:
+    outerClothing: ClothingOuterArmorBasicSlim
+  groupBy: "job_vests"
+
+- type: loadout
+  id: LoadoutSecurityWintercoat
+  equipment:
+    outerClothing: ClothingOuterWinterSec
+
+# bags
+- type: loadout
+  id: LoadoutSecurityBackpack
+  equipment:
+    back: ClothingBackpackSecurity
+  groupBy: "job_bags"
+
+- type: loadout
+  id: LoadoutSecuritySatchel
+  equipment:
+    back: ClothingBackpackSatchelSecurity
+  groupBy: "job_bags"
+
+- type: loadout
+  id: LoadoutSecurityDuffel
+  equipment:
+    back: ClothingBackpackDuffelSecurity
+  groupBy: "job_bags"
+
+# belts
+- type: loadout
+  id: LoadoutFilledSecurityBelt
+  equipment:
+    belt: ClothingBeltSecurityFilled
+  groupBy: "job_belts"
+
+- type: loadout
+  id: LoadoutFilledSecurityCarrier
+  equipment:
+    belt: ClothingBeltSecurityWebbingFilled # Why is it called 'Webbing'? WizDeeeen!
+  groupBy: "job_belts"
+
+
+# footwear
+# Instead of the usual filled ones, we'll use the empty ones.
+# Weapons are moved to a new category.
+- type: loadout
+  id: LoadoutSecurityCombatBoots
+  equipment:
+    shoes: ClothingShoesBootsCombat
+  groupBy: "jobs_footwear"
+
+- type: loadout
+  id: LoadoutSecurityJackBoots
+  equipment:
+    shoes: ClothingShoesBootsJack
+  groupBy: "jobs_footwear"
+
+- type: loadout
+  id: LoadoutSecurityWinterBoots
+  equipment:
+    shoes: ClothingShoesBootsWinterSecFilled
+
+# weapons
+- type: loadout
+  id: LoadoutSecurityPistolMK58
+  dummyEntity: WeaponPistolMk58
+  equipment:
+    pocket1: WeaponPistolMk58
+  storage:
+    back:
+    - MagazinePistol
+  groupBy: "job_projectiles"
+
+- type: loadout # This does technically belong to the detective. Makes em less unique. Look into others maybe?
+  id: LoadoutSecurityPistolInspector
+  dummyEntity: WeaponRevolverInspector
+  equipment:
+    pocket1: WeaponRevolverInspector
+  storage:
+    back:
+    - SpeedLoaderMagnum
+  groupBy: "job_projectiles"
+
+# LOADOUT GROUPS #
+- type: loadoutGroup
+  id: LoadoutGroupSecurityEyewear
+  name: loadout-group-sec-eyewear
+  loadouts:
+  - LoadoutSecurityHUD
+  - LoadoutSecurityPrescriptionHUD
+  - LoadoutSecurityEyepatch
+  - Glasses
+  - GlassesJamjar
+  - GlassesJensen
+
+- type: loadoutGroup
+  id: LoadoutGroupSecurityNeckwear
+  name: loadout-group-sec-neckwear
+  passengerFallbackGroup: LoadoutGroupPassengerNeckwear
+  minLimit: 0
+  loadouts:
+  - LoadoutBlackScarf
+  - LoadoutRedScarf
+
+- type: loadoutGroup
+  id: LoadoutGroupSecurityOuterwear
+  name: loadout-group-sec-outerwear
+  passengerFallbackGroup: LoadoutGroupPassengerOuterwear
+  minLimit: 0
+  loadouts:
+  - LoadoutSecurityArmorVest
+  - LoadoutSecuritySlimArmorVest
+  - LoadoutSecurityWintercoat
+
+- type: loadoutGroup
+  id: LoadoutGroupSecurityBags
+  name: loadout-group-sec-bags
+  loadouts:
+  - LoadoutSecurityBackpack
+  - LoadoutSecuritySatchel
+  - LoadoutSecurityDuffel
+  - CommonBackpack
+  - CommonSatchel
+  - CommonDuffel
+
+- type: loadoutGroup
+  id: LoadoutGroupSecurityBelts
+  name: loadout-group-sec-belts
+  loadouts:
+  - LoadoutFilledSecurityBelt
+  - LoadoutFilledSecurityCarrier
+
+- type: loadoutGroup
+  id: LoadoutGroupSecurityFootwear
+  name: loadout-group-sec-footwear
+  passengerFallbackGroup: LoadoutGroupPassengerFootwear
+  minLimit: 0 # This is probably a bad idea, job-wise... but we remain silly :3
+  defaultSelected: 1
+  loadouts:
+  - LoadoutSecurityCombatBoots
+  - LoadoutSecurityJackBoots
+  - LoadoutSecurityWinterBoots

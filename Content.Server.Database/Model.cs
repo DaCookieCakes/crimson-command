@@ -448,7 +448,7 @@ namespace Content.Server.Database
         public List<ProfileLoadout> Loadouts { get; set; } = new();
 
         // CRIMSON COMMAND SPECIFIC //
-        public bool PassengerFallback { get; set; } = false;
+        public bool PassengerFallback { get; set; }
     }
 
     /// <summary>

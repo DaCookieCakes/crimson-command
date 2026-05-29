@@ -8,7 +8,6 @@
 - type: loadoutGroup
   id: LoadoutGroupMusicianNeckwear
   name: loadout-group-musician-neckwear
-  passengerFallback: true
   passengerFallbackGroup: LoadoutGroupPassengerNeckwear
   minLimit: 0
   loadouts:
@@ -19,7 +18,6 @@
 - type: loadoutGroup
   id: LoadoutGroupMusicianFootwear
   name: loadout-group-musician-footwear
-  passengerFallback: true
   passengerFallbackGroup: LoadoutGroupPassengerFootwear
   minLimit: 0
   defaultSelected: 1

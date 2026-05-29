@@ -1,0 +1,43 @@
+# LOADOUTS #
+- type: loadout
+  id: LoadoutSecurityCadetLizardPlushie
+  storage:
+    back:
+    - PlushieLizardJobSecuritycadet
+
+# LOADOUT GROUPS #
+- type: loadoutGroup
+  id: LoadoutGroupSecurityCadetHeadwear
+  name: loadout-group-sec-cadet-headwear
+  minLimit: 0
+  loadouts:
+  - LoadoutSecurityOfficerHelmet
+  - LoadoutSecurityHat
+
+- type: loadoutGroup
+  id: LoadoutGroupSecurityCadetJumpers
+  name: loadout-group-sec-cadet-jumpers
+  loadouts:
+  - LoadoutSecurityJumpsuit
+  - LoadoutSecurityJumpskirt
+  - LoadoutGreySecurityJumpsuit
+  - LoadoutGreySecurityJumpskirt
+
+- type: loadoutGroup
+  id: LoadoutGroupSecurityCadetWeapons
+  name: loadout-group-sec-cadet-weapons
+  minLimit: 0
+  maxLimit: 2
+  loadouts:
+  - LoadoutWeaponStunBaton
+  - LoadoutWeaponFlash
+  - LoadoutSecurityCombatKnife
+  - LoadoutSecurityPistolMK58
+
+- type: loadoutGroup
+  id: LoadoutGroupSecurityCadetTrinkets
+  name: loadout-group-jobtrinkets
+  minLimit: 0
+  maxLimit: 2
+  loadouts:
+  - LoadoutSecurityCadetLizardPlushie

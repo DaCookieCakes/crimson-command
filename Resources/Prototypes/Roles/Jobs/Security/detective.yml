@@ -1,3 +1,5 @@
+# !! CRIMSON COMMAND MODIFIED !! #
+
 - type: job
   id: Detective
   name: job-name-detective
@@ -25,13 +27,13 @@
 - type: startingGear
   id: DetectiveGear
   equipment:
-    eyes: ClothingEyesGlassesSecurity
+  # eyes: ClothingEyesGlassesSecurity # CC: Moved to loadout.
     id: DetectivePDA
     ears: ClothingHeadsetSecurity
-    belt: ClothingBeltHolsterFilled
+  # belt: ClothingBeltHolsterFilled # CC: Moved to loadout.
   storage:
     back:
-    - Flash
+  # - Flash # CC: Moved to loadout.
     - ForensicPad
     - ForensicScanner
 

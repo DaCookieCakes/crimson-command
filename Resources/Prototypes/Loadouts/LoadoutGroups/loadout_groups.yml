@@ -151,8 +151,7 @@
 
 - type: loadoutGroup
   id: CaptainOuterClothing
-  name: loadout-group-captain-outerclothing
-  passengerFallback: true                                 # CC : Added
+  name: loadout-group-captain-outerclothing                                 # CC : Added
   passengerFallbackGroup: LoadoutGroupPassengerOuterwear  # CC : Added
   minLimit: 0
   loadouts:
@@ -200,7 +199,6 @@
   id: HoPOuterClothing
   name: loadout-group-hop-outerclothing
   minLimit: 0
-  passengerFallback: true
   passengerFallbackGroup: LoadoutGroupPassengerOuterwear
   loadouts:
   - HoPWintercoat
@@ -336,8 +334,7 @@
 
 - type: loadoutGroup
   id: ChefOuterClothing
-  name: loadout-group-chef-outerclothing
-  passengerFallback: true                                 # CC : Added
+  name: loadout-group-chef-outerclothing                                 # CC : Added
   passengerFallbackGroup: LoadoutGroupPassengerOuterwear  # CC : Added
   minLimit: 0
   loadouts:
@@ -423,8 +420,7 @@
 
 - type: loadoutGroup
   id: ChaplainOuterClothing
-  name: loadout-group-chaplain-outerclothing
-  passengerFallback: true                                 # CC : Added
+  name: loadout-group-chaplain-outerclothing                                 # CC : Added
   passengerFallbackGroup: LoadoutGroupPassengerOuterwear  # CC : Added
   minLimit: 0
   loadouts:
@@ -665,8 +661,7 @@
 
 - type: loadoutGroup
   id: MusicianOuterClothing
-  name: loadout-group-musician-outerclothing
-  passengerFallback: true                                 # CC : Added
+  name: loadout-group-musician-outerclothing                                 # CC : Added
   passengerFallbackGroup: LoadoutGroupPassengerOuterwear  # CC : Added
   minLimit: 0
   loadouts:

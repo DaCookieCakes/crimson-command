@@ -2,6 +2,7 @@ using Content.Server.Hands.Systems;
 using Content.Server.Storage.EntitySystems;
 using Content.Shared.Administration.Logs;
 using Content.Shared.Database;
+using Content.Shared.Examine;
 using Content.Shared.Inventory;
 using Content.Shared.Popups;
 using Content.Shared.Storage;
@@ -9,6 +10,8 @@ using Content.Shared.Trigger;
 using Robust.Server.Containers;
 
 namespace Content.Server.VoiceTrigger;
+
+// !! CRIMSON COMMAND MODIFIED !! //
 
 /// <summary>
 /// Allows storages to be manipulated using voice commands.
@@ -26,6 +29,34 @@ public sealed class StorageVoiceControlSystem : EntitySystem
     {
         base.Initialize();
         SubscribeLocalEvent<StorageVoiceControlComponent, VoiceTriggeredEvent>(VoiceTriggered);
+
+        // CC Specific
+        SubscribeLocalEvent<StorageVoiceControlComponent, ExaminedEvent>(OnExamined);
+    }
+
+    /// <summary>
+    ///     CRIMSON COMMAND SPECIFIC
+    ///     Displays any stored items (if possible!)
+    /// </summary>
+    /// <param name="ent"></param>
+    /// <param name="args"></param>
+    /// <exception cref="NotImplementedException"></exception>
+    private void OnExamined(Entity<StorageVoiceControlComponent> ent, ref ExaminedEvent args)
+    {
+        if (!args.IsInDetailsRange)
+            return;
+
+        if (ent.Comp.AllowedSlots != null && _inventory.TryGetContainingSlot(ent.Owner, out var itemSlot) &&
+            (itemSlot.SlotFlags & ent.Comp.AllowedSlots) == 0)
+            return;
+
+        if (!TryComp<StorageComponent>(ent.Owner, out var storage))
+            return;
+
+        foreach (var item in storage.Container.ContainedEntities)
+        {
+            args.PushMarkup(Name(item));
+        }
     }
 
     private void VoiceTriggered(Entity<StorageVoiceControlComponent> ent, ref VoiceTriggeredEvent args)

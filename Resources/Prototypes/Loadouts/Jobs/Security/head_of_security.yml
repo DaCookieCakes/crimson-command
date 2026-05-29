@@ -35,6 +35,7 @@
 - type: loadout
   id: HeadofSecurityTurtleneckSkirt
   equipment:
+    jumpsuit: ClothingUniformJumpskirtHoSAlt
 # groupBy: "jumpskirt"        # CC : Replaced
   groupBy: "HoS_turtlenecks"  # CC : Replaced
 

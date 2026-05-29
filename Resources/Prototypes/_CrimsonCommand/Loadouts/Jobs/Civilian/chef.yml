@@ -49,7 +49,6 @@
 # LOADOUT GROUPS #
 - type: loadoutGroup
   id: LoadoutGroupChefFootwear
-  passengerFallback: true
   passengerFallbackGroup: LoadoutGroupPassengerFootwear
   name: loadout-group-chef-footwear
   minLimit: 0

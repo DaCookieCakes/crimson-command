@@ -1,3 +1,5 @@
+# !! CRIMSON COMMAND MODIFIED !! #
+
 - type: job
   id: Warden
   name: job-name-warden
@@ -32,14 +34,15 @@
 - type: startingGear
   id: WardenGear
   equipment:
-    eyes: ClothingEyesGlassesSecurity
+   # eyes: ClothingEyesGlassesSecurity # CC: Moved to loadout.
     id: WardenPDA
     ears: ClothingHeadsetSecurity
-    pocket1: WeaponPistolMk58
+   # pocket1: WeaponPistolMk58 # CC: Moved to loadout.
+    gloves: ClothingHandsGlovesCombat # CC: Added.
   storage:
     back:
     - Flash
-    - MagazinePistol
+   # - MagazinePistol # CC: Moved to loadout.
 
 - type: chameleonOutfit
   id: WardenChameleonOutfit

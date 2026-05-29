@@ -41,7 +41,6 @@
 - type: loadoutGroup
   id: LoadoutGroupJanitorOuterwear
   name: loadout-group-janitor-outerwear
-  passengerFallback: true
   passengerFallbackGroup: LoadoutGroupPassengerOuterwear
   minLimit: 0
   loadouts:
@@ -53,7 +52,6 @@
 - type: loadoutGroup
   id: LoadoutGroupJanitorFootwear
   name: loadout-group-janitor-footwear
-  passengerFallback: true
   passengerFallbackGroup: LoadoutGroupPassengerFootwear
   minLimit: 0
   defaultSelected: 1  # Unsafe for cleaning, but we remain silly :3

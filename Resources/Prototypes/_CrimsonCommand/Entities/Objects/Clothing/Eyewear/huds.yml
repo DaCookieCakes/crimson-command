@@ -1,0 +1,8 @@
+- type: entity
+  parent: ClothingEyesGlassesSecurity
+  id: EntClothesSecurityPrescriptionHUD
+  name: prescription security glasses
+  description: Upgraded prescription sunglasses that provide flash immunity and a security HUD.
+  suffix: Security, CrimsonCommand
+  components:
+  - type: VisionCorrection

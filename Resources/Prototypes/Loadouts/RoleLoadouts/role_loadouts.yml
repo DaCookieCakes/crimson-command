@@ -427,58 +427,124 @@
   - HeadofSecurityJobTrinkets
   - GroupSpeciesBreathToolSecurity
 
+# CC: Replaced.
+#- type: roleLoadout
+#  id: JobWarden
+#  groups:
+#  - WardenHead
+#  - WardenJumpsuit
+#  - SecurityBackpack
+#  - SecurityBelt
+#  - WardenOuterClothing
+#  - SecurityShoes
+#  - SurvivalSecurity
+#  - Trinkets
+#  - WardenJobTrinkets
+#  - GroupSpeciesBreathToolSecurity
+
 - type: roleLoadout
   id: JobWarden
   groups:
-  - WardenHead
-  - WardenJumpsuit
-  - SecurityBackpack
-  - SecurityBelt
-  - WardenOuterClothing
-  - SecurityShoes
-  - SurvivalSecurity
-  - Trinkets
-  - WardenJobTrinkets
   - GroupSpeciesBreathToolSecurity
+  - LoadoutGroupWardenHeadwear
+  - LoadoutGroupSecurityEyewear
+  - LoadoutGroupWardenNeckwear
+  - LoadoutGroupWardenJumpers
+  - LoadoutGroupWardenOuterwear
+  - LoadoutGroupSecurityBags
+  - LoadoutGroupSecurityBelts
+  - LoadoutGroupWardenWeapons
+  - LoadoutGroupSecurityFootwear
+  - LoadoutGroupWardenTrinkets
+
+# CC: Replaced.
+#- type: roleLoadout
+#  id: JobSecurityOfficer
+#  groups:
+#  - SecurityHead
+#  - SecurityJumpsuit
+#  - SecurityBackpack
+#  - SecurityOuterClothing
+#  - SecurityShoes
+#  - SecurityPDA
+#  - SecurityBelt
+#  - SurvivalSecurity
+#  - Trinkets
+#  - SecurityJobTrinkets
+#  - GroupSpeciesBreathToolSecurity
 
 - type: roleLoadout
   id: JobSecurityOfficer
   groups:
-  - SecurityHead
-  - SecurityJumpsuit
-  - SecurityBackpack
-  - SecurityOuterClothing
-  - SecurityShoes
-  - SecurityPDA
-  - SecurityBelt
-  - SurvivalSecurity
-  - Trinkets
-  - SecurityJobTrinkets
   - GroupSpeciesBreathToolSecurity
+  - LoadoutGroupSecurityOfficerHeadwear
+  - LoadoutGroupSecurityEyewear
+  - LoadoutGroupSecurityNeckwear
+  - LoadoutGroupSecurityOfficerJumpers
+  - LoadoutGroupSecurityOuterwear
+  - LoadoutGroupSecurityBags
+  - LoadoutGroupSecurityBelts
+  - LoadoutGroupSecurityOfficerWeapons
+  - LoadoutGroupSecurityFootwear
+  - LoadoutGroupSecurityOfficerPDA
+  - LoadoutGroupSecurityOfficerTrinkets
+
+# CC: Replaced.
+#- type: roleLoadout
+#  id: JobDetective
+#  groups:
+#  - DetectiveHead
+#  - DetectiveNeck
+#  - DetectiveJumpsuit
+ # - SecurityBackpack
+ # - DetectiveOuterClothing
+ # - SecurityShoes
+ # - SurvivalSecurity
+ # - Trinkets
+ # - DetectiveJobTrinkets
+ # - GroupSpeciesBreathToolSecurity
 
 - type: roleLoadout
   id: JobDetective
   groups:
-  - DetectiveHead
-  - DetectiveNeck
-  - DetectiveJumpsuit
-  - SecurityBackpack
-  - DetectiveOuterClothing
-  - SecurityShoes
-  - SurvivalSecurity
-  - Trinkets
-  - DetectiveJobTrinkets
   - GroupSpeciesBreathToolSecurity
+  - LoadoutGroupDetectiveHeadwear
+  - LoadoutGroupSecurityEyewear
+  - LoadoutGroupDetectiveNeckwear
+  - LoadoutGroupDetectiveJumpers
+  - LoadoutGroupDetectiveOuterwear
+  - LoadoutGroupDetectiveHandwear
+  - LoadoutGroupSecurityBags
+  - LoadoutGroupSecurityBelts
+  - LoadoutGroupDetectiveWeapons
+  - LoadoutGroupDetectiveFootwear
+  - LoadoutGroupDetectiveTrinkets
+
+# CC: Replaced.
+#- type: roleLoadout
+#  id: JobSecurityCadet
+#  groups:
+#  - SecurityCadetJumpsuit
+#  - SecurityBackpack
+#  - SurvivalSecurity
+#  - Trinkets
+#  - SecurityCadetJobTrinkets
+#  - GroupSpeciesBreathToolSecurity
 
 - type: roleLoadout
   id: JobSecurityCadet
   groups:
-  - SecurityCadetJumpsuit
-  - SecurityBackpack
-  - SurvivalSecurity
-  - Trinkets
-  #- SecurityCadetJobTrinkets
   - GroupSpeciesBreathToolSecurity
+  - LoadoutGroupSecurityCadetHeadwear
+  - LoadoutGroupSecurityEyewear
+  - LoadoutGroupSecurityNeckwear
+  - LoadoutGroupSecurityCadetJumpers
+  - LoadoutGroupSecurityOuterwear
+  - LoadoutGroupSecurityBags
+  - LoadoutGroupSecurityBelts
+  - LoadoutGroupSecurityCadetWeapons
+  - LoadoutGroupSecurityFootwear
+  - LoadoutGroupSecurityCadetTrinkets
 
 # Wildcards
 - type: roleLoadout

@@ -1,0 +1,106 @@
+# LOADOUTS #
+
+# headwear
+- type: loadout
+  id: LoadoutWardenCap
+  equipment:
+    head: ClothingHeadHatWarden
+
+- type: loadout
+  id: LoadoutWardenBeret
+  equipment:
+    head: ClothingHeadHatBeretWarden
+
+# jumpers
+- type: loadout
+  id: LoadoutWardenJumpsuit
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitWarden
+  groupBy: "job_jumpers"
+
+- type: loadout
+  id: LoadoutWardenJumpskirt
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtWarden
+  groupBy: "job_jumpers"
+
+# outerwear
+- type: loadout
+  id: LoadoutWardenArmoredJacket
+  equipment:
+    outerClothing: ClothingOuterCoatWarden
+
+- type: loadout
+  id: LoadoutWardenArmoredWinterCoat
+  equipment:
+    outerClothing: ClothingOuterWinterWarden
+
+# weapons
+- type: loadout
+  id: LoadoutWardenDisablerSMG
+  equipment:
+    pocket1: WeaponDisablerSMG
+  groupBy: "job_projectiles_stun"
+
+- type: loadout
+  id: LoadoutWardenTaser
+  equipment:
+    pocket1: WeaponTaser
+  groupBy: "job_projectiles_stun"
+
+# trinkets
+- type: loadout
+  id: LoadoutWardenLizardPlushie
+  storage:
+    back:
+    - PlushieLizardJobWarden
+
+
+# LOADOUT GROUPS #
+- type: loadoutGroup
+  id: LoadoutGroupWardenHeadwear
+  name: loadout-group-warden-headwear
+  minLimit: 0
+  loadouts:
+  - LoadoutWardenCap
+  - LoadoutWardenBeret
+
+- type: loadoutGroup
+  id: LoadoutGroupWardenJumpers
+  name: loadout-group-warden-jumpers
+  loadouts:
+  - LoadoutWardenJumpsuit
+  - LoadoutWardenJumpskirt
+
+- type: loadoutGroup
+  id: LoadoutGroupWardenOuterwear
+  name: loadout-group-warden-outerwear
+  passengerFallbackGroup: LoadoutGroupPassengerOuterwear
+  minLimit: 0
+  defaultSelected: 1
+  loadouts:
+  - LoadoutWardenArmoredJacket
+  - LoadoutWardenArmoredWinterCoat
+
+- type: loadoutGroup
+  id: LoadoutGroupWardenWeapons
+  name: loadout-group-warden-weapons
+  minLimit: 0
+  maxLimit: 2
+  loadouts:
+  - LoadoutWeaponStunBaton
+  - LoadoutWeaponFlash
+  - LoadoutSecurityCombatKnife
+  - LoadoutDisabler
+  - LoadoutWardenDisablerSMG
+  - LoadoutWardenTaser
+  - LoadoutSecurityPistolMK58
+
+- type: loadoutGroup
+  id: LoadoutGroupWardenTrinkets
+  name: loadout-group-jobtrinkets
+  minLimit: 0
+  maxLimit: 2
+  loadouts:
+  - SecStar
+  - LoadoutWardenLizardPlushie

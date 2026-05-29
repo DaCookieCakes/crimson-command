@@ -1,3 +1,5 @@
+# !! CRIMSON COMMAND MODIFIED !! #
+
 - type: entity
   id: DresserCaptainFilled
   parent: Dresser
@@ -14,6 +16,7 @@
         - id: ClothingHandsGlovesCaptain
         - id: ClothingOuterWinterCap
         - id: ClothingNeckCloakCap
+        - id: EntClothesCaptainWinterBoots # CC: Added
 
 - type: entity
   id: DresserChiefEngineerFilled
@@ -61,6 +64,7 @@
         - id: ClothingOuterWinterHoP
         - id: ClothingEyesGlasses
         - id: ClothingNeckCloakHop
+        - id: EntClothesHoPWinterBoots # CC: Added
 
 - type: entity
   id: DresserHeadOfSecurityFilled

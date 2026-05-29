@@ -1,0 +1,41 @@
+# Detective
+# Added these; empty and non-armored variants of the trenchcoats. Why not just have these by default? WIZDEEEEN!
+# Also, not going to question why the BASE of the normal ones have a steal objective.
+- type: entity
+  parent: [ ClothingOuterBaseMedium, ClothingOuterStorageBase, AllowSuitStorageClothing, BaseSecurityContraband ]
+  id: EntClothesOuterDetectivesTrenchcoat
+  name: detective's trenchcoat
+  description: An 18th-century multi-purpose trenchcoat. Someone who wears this means serious business.
+  suffix: Security, Detective, CrimsonCommand
+  components:
+  - type: Sprite
+    sprite: Clothing/OuterClothing/Coats/detective.rsi
+  - type: Clothing
+    sprite: Clothing/OuterClothing/Coats/detective.rsi
+  - type: TemperatureProtection
+    heatingCoefficient: 1.1
+    coolingCoefficient: 0.1
+
+- type: entity
+  parent: EntClothesOuterDetectivesTrenchcoat
+  id: EntClothesOuterNoirTrenchcoat
+  name: noir trenchcoat
+  description: Ah, your trusty coat. There's a few tears here and there, giving it a more timely look. Or at least, that's what you told yourself when you found out gettin' it repaired would set you back 200 spesos.
+  suffix: Security, Detective, CrimsonCommand
+  components:
+  - type: Sprite
+    sprite: Clothing/OuterClothing/Coats/detective_grey.rsi
+  - type: Clothing
+    sprite: Clothing/OuterClothing/Coats/detective_grey.rsi
+
+- type: entity
+  parent: [ EntClothesOuterDetectivesTrenchcoat, ClothingOuterArmorBase ]
+  id: EntClothesOuterDetectivesArmoredTrenchcoat
+  name: detective's armored trenchcoat
+  suffix: Security, Detective, CrimsonCommand
+
+- type: entity
+  parent: [ EntClothesOuterNoirTrenchcoat, ClothingOuterArmorBase ]
+  id: EntClothesOuterNoirArmoredTrenchcoat
+  name: noir armored trenchcoat
+  suffix: Security, Detective, CrimsonCommand
