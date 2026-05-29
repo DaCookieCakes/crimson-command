@@ -1,0 +1,167 @@
+# LOADOUTS #
+
+# headwear
+- type: loadout
+  id: LoadoutHoSHat
+  equipment:
+    head: ClothingHeadHatHoshat
+
+- type: loadout
+  id: LoadoutHoSBeret
+  equipment:
+    head: ClothingHeadHatBeretHoS
+
+# neckwear
+- type: loadout
+  id: LoadoutHoSCloak
+  equipment:
+    neck: ClothingNeckCloakHos
+
+- type: loadout
+  id: LoadoutHoSMantle
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: MasterHoS
+  equipment:
+    neck: ClothingNeckMantleHOS
+
+# jumpers
+- type: loadout
+  id: LoadoutHoSJumpsuit
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitHoS
+  groupBy: "job_jumpers"
+
+- type: loadout
+  id: LoadoutHoSJumpskirt
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtHoS
+  groupBy: "job_jumpers"
+
+- type: loadout
+  id: LoadoutHoSTurtleNeck
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitHoSAlt
+  groupBy: "job_jumpers_2"
+
+- type: loadout
+  id: LoadoutHoSTurtleNeckSkirt
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtHoSAlt
+  groupBy: "job_jumpers_2"
+
+- type: loadout
+  id: LoadoutHoSFormalSuit
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitHosFormal
+  groupBy: "job_jumpers_3"
+
+- type: loadout
+  id: LoadoutHoSFormalDress
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtHosFormal
+  groupBy: "job_jumpers_3"
+
+- type: loadout
+  id: LoadoutHoSParadeUniform
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitHoSParadeMale
+  groupBy: "job_jumpers_4"
+
+- type: loadout
+  id: LoadoutHoSParadeDress
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtHoSParadeMale
+  groupBy: "job_jumpers_4"
+
+# outerwear
+- type: loadout
+  id: LoadoutHoSTrenchCoat
+  equipment:
+    outerClothing: ClothingOuterCoatHoSTrench
+
+- type: loadout
+  id: LoadoutHoSArmoredWinterCoat
+  equipment:
+    outerClothing: ClothingOuterWinterHoS
+  groupBy: "job_wintercoats"
+
+- type: loadout
+  id: LoadoutHoSWinterCoat
+  equipment:
+    outerClothing: ClothingOuterWinterHoSUnarmored
+  groupBy: "job_wintercoats"
+
+# trinkets
+- type: loadout
+  id: LoadoutHoSLizardPlushie
+  storage:
+    back:
+    - PlushieLizardJobHeadofsecurity
+
+# LOADOUT GROUPS #
+- type: loadoutGroup
+  id: LoadoutGroupHoSHeadwear
+  name: loadout-group-hos-headwear
+  minLimit: 0
+  loadouts:
+  - LoadoutHoSHat
+  - LoadoutHoSBeret
+
+- type: loadoutGroup
+  id: LoadoutGroupHoSNeckwear
+  name: loadout-group-hos-neckwear
+  passengerFallbackGroup: LoadoutGroupPassengerNeckwear
+  minLimit: 0
+  loadouts:
+  - LoadoutHoSCloak
+  - LoadoutHoSMantle
+  - LoadoutBlackScarf
+  - LoadoutRedScarf
+
+- type: loadoutGroup
+  id: LoadoutGroupHoSJumpers
+  name: loadout-group-hos-jumpers
+  loadouts:
+  - LoadoutHoSJumpsuit
+  - LoadoutHoSJumpskirt
+  - LoadoutHoSTurtleNeck
+  - LoadoutHoSTurtleNeckSkirt
+  - LoadoutHoSFormalSuit
+  - LoadoutHoSFormalDress
+  - LoadoutHoSParadeUniform
+  - LoadoutHoSParadeDress
+
+- type: loadoutGroup
+  id: LoadoutGroupHoSOuterwear
+  name: loadout-group-hos-outerwear
+  passengerFallbackGroup: LoadoutGroupPassengerOuterwear
+  minLimit: 0
+  defaultSelected: 1
+  loadouts:
+    - LoadoutHoSTrenchCoat
+    - LoadoutHoSArmoredWinterCoat
+    - LoadoutHoSWinterCoat
+
+- type: loadoutGroup
+  id: LoadoutGroupHoSWeapons
+  name: loadout-group-hos-weapons
+  minLimit: 0
+  maxLimit: 2
+  loadouts:
+  - LoadoutWeaponStunBaton
+  - LoadoutWeaponFlash
+  - LoadoutSecurityCombatKnife
+  - LoadoutDisabler
+  - LoadoutDisablerSMGNoFilter
+  - LoadoutTaserNoFilter
+  - LoadoutSecurityPistolMK58
+
+- type: loadoutGroup
+  id: LoadoutGroupHoSTrinkets
+  name: loadout-group-jobtrinkets
+  minLimit: 0
+  maxLimit: 2
+  loadouts:
+  - SecStar
+  - LoadoutHoSLizardPlushie

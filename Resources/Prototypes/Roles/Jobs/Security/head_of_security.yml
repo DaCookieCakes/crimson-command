@@ -43,15 +43,15 @@
 - type: startingGear
   id: HoSGear
   equipment:
-    eyes: ClothingEyesGlassesSecurity
+  # eyes: ClothingEyesGlassesSecurity # CC: Moved to loadout.
     id: HoSPDA
     gloves: ClothingHandsGlovesCombat
     ears: ClothingHeadsetAltSecurity
-    pocket1: WeaponPistolMk58
-  storage:
-    back:
-    - Flash
-    - MagazinePistol
+  # pocket1: WeaponPistolMk58 # CC: Moved to loadout.
+  #storage:
+  # back:
+  # - Flash
+  # - MagazinePistol # CC: Moved to loadout.
 
 - type: chameleonOutfit
   id: HeadOfSecurityChameleonOutfit

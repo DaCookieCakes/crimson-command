@@ -36,6 +36,12 @@ loadout-group-warden-jumpers = Warden jumpers
 loadout-group-warden-outerwear = Warden outerwear
 loadout-group-warden-weapons = Warden weapons
 
+loadout-group-hos-headwear = HoS headwear
+loadout-group-hos-neckwear = HoS neckwear
+loadout-group-hos-jumpers = HoS jumpers
+loadout-group-hos-outerwear = HoS outerwear
+loadout-group-hos-weapons = HoS weapons
+
 # CIVILIAN #
 loadout-group-bartender-jumpers = Bartender jumpers
 loadout-group-bartender-outerwear = Bartender outerwear

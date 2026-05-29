@@ -373,7 +373,7 @@
   parent: [ClothingUniformBase, BaseCommandContraband]
   id: ClothingUniformJumpsuitHoSParadeMale
   name: head of security's parade uniform
-  description: A male head of security's luxury-wear, for special occasions.
+  description: A head of security's luxury-wear, for special occasions. # CC: Removed 'male'.
   components:
   - type: Sprite
     sprite: Clothing/Uniforms/Jumpsuit/hos_parade.rsi
@@ -809,7 +809,7 @@
 - type: entity
   parent: [ClothingUniformBase, BaseCommandContraband]
   id: ClothingUniformJumpsuitHosFormal
-  name: hos's formal suit
+  name: head of security's formal suit # CC: 'hos' -> 'head of security'
   description: A suit for special occasions.
   components:
   - type: Sprite

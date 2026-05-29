@@ -34,19 +34,13 @@
   id: LoadoutWardenArmoredWinterCoat
   equipment:
     outerClothing: ClothingOuterWinterWarden
-
-# weapons
-- type: loadout
-  id: LoadoutWardenDisablerSMG
-  equipment:
-    pocket1: WeaponDisablerSMG
-  groupBy: "job_projectiles_stun"
+  groupBy: "job_wintercoats"
 
 - type: loadout
-  id: LoadoutWardenTaser
+  id: LoadoutWardenWinterCoat
   equipment:
-    pocket1: WeaponTaser
-  groupBy: "job_projectiles_stun"
+    outerClothing: ClothingOuterWinterWardenUnarmored
+  groupBy: "job_wintercoats"
 
 # trinkets
 - type: loadout
@@ -81,6 +75,7 @@
   loadouts:
   - LoadoutWardenArmoredJacket
   - LoadoutWardenArmoredWinterCoat
+  - LoadoutWardenWinterCoat
 
 - type: loadoutGroup
   id: LoadoutGroupWardenWeapons
@@ -92,8 +87,8 @@
   - LoadoutWeaponFlash
   - LoadoutSecurityCombatKnife
   - LoadoutDisabler
-  - LoadoutWardenDisablerSMG
-  - LoadoutWardenTaser
+  - LoadoutDisablerSMGNoFilter
+  - LoadoutTaserNoFilter
   - LoadoutSecurityPistolMK58
 
 - type: loadoutGroup

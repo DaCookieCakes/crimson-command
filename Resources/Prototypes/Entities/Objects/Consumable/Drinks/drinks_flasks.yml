@@ -1,3 +1,5 @@
+# !! CRIMSON COMMAND MODIFIED !! #
+
 - type: entity
   abstract: true
   parent: [DrinkBaseMaterialStrongMetal, DrinkBase, DrinkBaseOpenable, DrinkVisualsOpenable]
@@ -74,7 +76,7 @@
 - type: entity
   parent: FlaskBase
   id: DrinkHosFlask
-  name: hos's flask
+  name: head of security's flask # CC: 'hos' -> 'head of security'
   description: A metal flask, fit for a hard working HoS.
   components:
   - type: Sprite

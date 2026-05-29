@@ -143,6 +143,18 @@
     - SpeedLoaderMagnum
   groupBy: "job_projectiles"
 
+- type: loadout
+  id: LoadoutDisablerSMGNoFilter
+  equipment:
+    pocket1: WeaponDisablerSMG
+  groupBy: "job_projectiles_stun"
+
+- type: loadout
+  id: LoadoutTaserNoFilter
+  equipment:
+    pocket1: WeaponTaser
+  groupBy: "job_projectiles_stun"
+
 # LOADOUT GROUPS #
 - type: loadoutGroup
   id: LoadoutGroupSecurityEyewear
