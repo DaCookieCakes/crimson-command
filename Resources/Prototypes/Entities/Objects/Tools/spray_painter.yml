@@ -19,9 +19,9 @@
         type: SprayPainterBoundUserInterface
   - type: SprayPainter
     colorPalette:
-#     yellow: '#B3A234FF' # CC : Replaced
-#     green: '#3AB334FF'  # CC : Replaced
-#     blue: '#0335FCFF'   # CC : Replaced
+#     yellow: '#B3A234FF' # CC: Replaced
+#     green: '#3AB334FF' # CC: Replaced
+#     blue: '#0335FCFF' # CC: Replaced
       red: '#FF1212'
       orange: '#FF9900'
       yellow: '#FFFF00'
@@ -33,6 +33,11 @@
       black: '#333333'
       pink: '#FF99FF'   # CC : Added
       purple: '#FF00FF' # CC : Added
+      # standard atmos pipes
+      waste: '#990000'
+      distro: '#0055cc'
+      air: '#03fcd3'
+      mix: '#947507'
   - type: StaticPrice
     price: 40
   - type: LimitedCharges
